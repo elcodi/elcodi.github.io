@@ -3,6 +3,10 @@
 /*------------------------------------------------------*/
 
 /* Logo */
+#trueHeader{
+	background-color:#faa900;
+}
+
 #trueHeader #logo{
 	float:left;
 	display:block;
@@ -2076,6 +2080,7 @@ ul.fun_facts {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px 70px 0px;
+    background-image: url(../images/background.jpg);
 }
 .features_sec35 .box {
 	float: left;
@@ -5538,3 +5543,40 @@ a.knowmore_but:hover {
 	z-index: 999;
 }
 
+/* Custom */
+#page_header {
+
+    text-align: center;
+}
+
+#page_header .container_full {
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: black;
+}
+
+#page_header .container_full h1 {
+
+    font-size: 50px;
+    color: inherit;
+}
+
+#page_header .container_full h2 {
+    color: inherit;
+}
+
+#page_header .container_full a {
+
+    font-size: 16px;
+    padding: 12px 25px;
+    border: 3px solid #faa900;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+#page_header .container_full a:hover {
+
+    color: inherit;
+}

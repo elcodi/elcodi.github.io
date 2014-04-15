@@ -3156,7 +3156,7 @@ ul.fsocials {
 }
 
 .readmore_but3 {
-	float: left;
+	display: inline-block;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 13px 40px;
@@ -5579,4 +5579,22 @@ a.knowmore_but:hover {
 #page_header .container_full a:hover {
 
     color: inherit;
+}
+
+#market i.ppal{
+    color:#faa900;
+    border: 1px solid #faa900;
+    background-color: white;
+    width: 130px;
+    height: 130px;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 130px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+#market a{
+    margin: 30px auto 0;
 }

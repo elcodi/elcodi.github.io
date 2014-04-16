@@ -2161,7 +2161,7 @@ header {
 
 #page_header {
   z-index: -1;
-  min-height: 400px;
+  min-height: 500px;
   text-align: center;
   background-image: url("../images/background.jpg");
   background-position: left top;

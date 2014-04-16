@@ -1,0 +1,68 @@
+/* =========================================================================
+ * MIXINS
+ * =========================================================================
+
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -o-border-radius: $radius
+    border-radius: $radius
+
+=box-shadow($hor, $ver, $blur, $spread, $color, $inset:"")
+    -webkit-box-shadow: $hor $ver $blur $spread $color #{$inset}
+    -moz-box-shadow: $hor $ver $blur $spread $color #{$inset}
+    -o-box-shadow: $hor $ver $blur $spread $color #{$inset}
+    box-shadow: $hor $ver $blur $spread $color #{$inset}
+
+=text-shadow($hor, $ver, $blur, $color)
+    -webkit-text-shadow: $hor $ver $blur $color
+    -moz-text-shadow: $hor $ver $blur $color
+    -o-text-shadow: $hor $ver $blur $color
+    text-shadow: $hor $ver $blur $color
+
+=transition($property, $time, $type:"")
+    -webkit-transition: $property $time #{$type}
+    -moz-transition: $property $time #{$type}
+    -ms-transition: $property $time #{$type}
+    -o-transition: $property $time #{$type}
+    transition: $property $time #{$type}
+
+=appearance($type)
+    -webkit-appearance: $type
+    -moz-appearance: $type
+    appearance: $type
+    * fhdalfdask
+
+=box-sizing
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+=bg-gradient($color_from, $color_to) 
+    background: $color_from
+    background: -moz-linear-gradient(top,  $color_from 0%, $color_to 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color_from), color-stop(100%,$color_to))
+    background: -webkit-linear-gradient(top,  $color_from 0%,$color_to 100%)
+    background: -o-linear-gradient(top,  $color_from 0%,$color_to 100%)
+    background: -ms-linear-gradient(top,  $color_from 0%,$color_to 100%)
+    background: linear-gradient(to bottom,  $color_from 0%,$color_to 100%)
+
+=opacity($value)
+    opacity: $value
+    filter: alpha(opacity=$value*100) // For IE8 and earlier
+
+=text-stroke($width, $color)
+    -webkit-text-stroke: $width $color
+    -moz-text-stroke: $width $color
+
+=clearfix
+    *zoom: 1
+
+    &:before,
+    &:after
+        display: table
+        content: ""
+        line-height: 0
+
+    &:after
+        clear: both

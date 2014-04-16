@@ -5,376 +5,258 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
 
 <head>
-	<title>elcodi - one, two, three</title>
+    <title>elcodi - one, two, three</title>
 
-	<meta charset="utf-8">
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
 
-    <!-- Favicon -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- this styles only adds some repairs on idevices  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google fonts - witch you want to use - (rest you can just remove) -->
-   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- google fonts - witch you want to use - (rest you can just remove) -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-    <!-- ######### CSS STYLES ######### -->
+        <!-- css styles -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/reset.css" type="text/css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/colors/yellow.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <!-- responsive devices styles -->
+        <link href="js/mainmenu/bootstrap.css" rel="stylesheet">
+    </head>
 
-    <!-- responsive devices styles -->
-	<link rel="stylesheet" media="screen" href="css/responsive-leyouts.css" type="text/css" />
-    <link href="js/mainmenu/bootstrap.css" rel="stylesheet">
+    <body>
+        <div class="site_wrapper">
+            <header id="header">
+                <div id="topHeader" class="header-top">
+                    <div class="wrapper">
+                        <div class="top_nav">
+                            <div class="container">
+                                <div class="left">
+                                    <ul>
+                                        <li><a href="mailto:tech@elcodi.com"><i class="fa fa-envelope"></i> tech@elcodi.com</a></li>
+                                        <li><i class="fa fa-phone-square"></i> +34 902 73 40 50</li>
+                                    </ul>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><a target="_blank" href="http://github.com/elcodi"><i class="fa fa-github"></i></a></li>
+                                        <li><a target="_blank" href="http://twitter.com/elcodi_dev"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a target="_blank" href="#"><i class="fa fa-rss"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="wrapper">
+                        <div class="container">
+                            <div class="menu_main">
+                                <nav class="navbar navbar-default fhmm" role="navigation">
+                                    <div id="defaultmenu" class="navbar-collapse collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="#">Home</a></li>
+                                            <li><a href="#principles">Principles</a></li>
+                                            <li><a href="#roadmap">Roadmap</a></li>
+                                            <li><a href="#team">Team</a></li>
+                                            <li><a target="_blank" href="http://github.com/elcodi">Code</a></li>
+                                            <li><a target="_blank" href="http://docs.elcodi.io">Docs</a></li>
+                                            <li><a target="_blank" href="http://blog.elcodi.io">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-</head>
+            <div id="page_header">
+                <div class="container_full">
+                    <h1>Elcodi</h1>
+                    <h2>Flexible e-commerce components for symfony2</h2>
+                </div>
+            </div>
 
-<body>
+            <div class="features_sec1">
+                <div class="container" id="principles">
+                    <a class="button-first" href="http://github.com/elcodi">Get started</a>
+                    <h2 class="section_title_drakgray">our <strong>Principles</strong></h2>
+
+                    <div class="one_half">
+                        <i class="fa fa-bars"></i>
+                        <h3 class="nocaps">Flexible your implementation</h3>
+                        <p>Layered architecture</p>
+                        <p>Loosely coupled code</p>
+                        <p>Event oriented philosophy</p>
+                    </div>
+
+                    <div class="one_half last">
+                        <i class="fa fa-puzzle-piece"></i>
+                        <h3 class="nocaps">Extend your project</h3>
+                        <p>Customizable model and service layers</p>
+                        <p>Completely overridable entity associations</p>
+                        <p>Rely only on the components you need</p>
+                    </div>
+
+                    <div class="one_half">
+                        <i class="fa fa-rocket"></i>
+                        <h3 class="nocaps">Lean development</h3>
+                        <p>Sensible default implementation</p>
+                        <p>Managers for encapsulating your domain logic</p>
+                    </div>
+
+                    <div class="one_half last">
+                        <i class="fa fa-leaf"></i>
+                        <h3 class="nocaps">Control your code</h3>
+                        <p>Test components in isolation</p>
+                        <p>Rigorous taxonomy</p>
+                        <p>Continuous documentation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page_title">
+                <div class="container" id="market">
+                    <i class="ppal fa fa-shopping-cart"></i>
+                    <h1>Elcodi Market</h1>
+                    <p>One of our goals is to create a link between all elcodi developers to exchange their implementations and even sell them.</p>
+                    <p>Stay tuned on our movements for future releases</p>
+                    <a target="_blank" href="http://twitter.com/elcodi_dev" class="button-second"><i class="fa fa-twitter"></i>Follow us!</a>
+                </div>
+            </div>
+
+            <div class="features_sec39">
+                <div class="container" id="roadmap">
+                    <h2 class="section_title_drakgray">our <strong>roadmap</strong></h2>
+                    <div class="one_half"><img src="images/site-img45.png" alt="" class="limage" /></div>
+                    <div class="one_half last">
+                        <div class="rightsection">
+                            <ul class="active">
+                                <li class="icon"><i class="fa fa-gears"></i></li>
+                                <li class="text">
+                                    <h3 class="nocaps">Core development</h3> <p>Much of our work focuses on developing a clear methodology and prepared to cover most of the implementations in an easy and understandable way.</p>
+                                </li>
+                            </ul>
+                            <ul class="two">
+                                <li class="icon"><i class="fa fa-laptop"></i></li>
+                                <li class="text">
+                                    <h3 class="nocaps">Backoffice components</h3> <p>We are working on a powerful and flexible approach to managing content. The modularity and simplicity will remain our main goal</p>
+                                </li>
+                            </ul>
+                            <ul class="three active">
+                                <li class="icon"><i class="fa fa-edit"></i></li>
+                                <li class="text">
+                                    <h3 class="nocaps">Documentation</h3>
+                                    <p>And all this in parallel with a demanding development of a comprehensive and easy documentation. Use elcodi should be a positive, constructive and profitable experience for your projects</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features_sec36">
+                <div class="container">
+                    <h2 class="section_title_white fure lessmar">Join us</h2>
+                    <p>All help will be welcome. Don't hesitate to contact us and give your feedback.</p>
+                    <p>This will make us grow up</p>
+                    <a target="_blank" href="http://github.com/elcodi" class="button-third"><i class="fa fa-github"></i>Repository</a>
+                </div>
+            </div>
+
+            <div class="features_sec35">
+                <div class="container" id="team">
+                    <h2 class="section_title_drakgray"><strong>Meet</strong> Our Team</h2>
+                    <div class="one_fourth">
+                        <div class="box active">
+                            <div class="timage"><img src="images/profiles/aldochiecchia.png" alt="" /></div>
+                            <h3 class="nocaps">Aldo Chiecchia</h3>
+                            <ul>
+                                <li><a target="_blank" href="http://github.com/alch"><i class="fa fa-github"></i></a></li>
+                                <li><a target="_blank" href="http://twitter.com/zimage"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/aldochiecchia"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="one_fourth">
+                        <div class="box active">
+                            <div class="timage"><img src="images/profiles/marcmorera.png" alt="" /></div>
+                            <h3 class="nocaps">Marc Morera</h3>
+                            <ul>
+                                <li><a target="_blank" href="http://github.com/mmoreram"><i class="fa fa-github"></i></a></li>
+                                <li><a target="_blank" href="http://twitter.com/mmoreram"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/mmoreram"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="one_fourth last">
+                        <div class="box active">
+                            <div class="timage"><img src="images/profiles/marcjordana.png" alt="" /></div>
+                            <h3 class="nocaps">Marc Jordana</h3>
+                            <ul>
+                                <li><a target="_blank" href="http://twitter.com/marcjordana"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/marcjordana"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="one_fourth">
+                        <div class="box active">
+                            <div class="timage"><img src="images/profiles/gerardolive.png" alt="" /></div>
+                            <h3 class="nocaps">Gerard Olivé</h3>
+                            <ul>
+                                <li><a target="_blank" href="http://twitter.com/Gerard_Go"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/gerardolive"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
-<div class="site_wrapper">
-
-<header id="header">
-
-	<!-- Top header bar -->
-	<div id="topHeader">
-
-	<div class="wrapper">
-
-        <div class="top_nav">
-        <div class="container">
-
-        <div class="left">
-
-            <ul>
-                <li><a href="mailto:tech@elcodi.com"><i class="fa fa-envelope"></i> tech@elcodi.com</a></li>
-                <li><i class="fa fa-phone-square"></i> +34 902 73 40 50</li>
-            </ul>
-
-        </div><!-- end left links -->
-
-        <div class="right">
-
-            <ul>
-                <li><a target="_blank" href="http://github.com/elcodi"><i class="fa fa-github"></i></a></li>
-                <li><a target="_blank" href="http://twitter.com/elcodi_dev"><i class="fa fa-twitter"></i></a></li>
-                <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a target="_blank" href="#"><i class="fa fa-rss"></i></a></li>
-            </ul>
-
-        </div><!-- end right social links -->
-
+            <div class="copyright_info two">
+                <div class="container">
+                    <div class="one_half">
+                        Copyright © 2014 elcodi.com. All rights reserved.
+                    </div>
+                    <div class="one_half last">
+                        <ul class="footer_social_links">
+                            <li><a target="_blank" href="http://github.com/elcodi"><i class="fa fa-github"></i></a></li>
+                            <li><a target="_blank" href="http://twitter.com/elcodi_dev"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="scrollup">Scroll</a>
         </div>
-        </div>
 
- 	</div>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	</div><!-- end top navigation -->
+      ga('create', 'UA-50003565-1', 'elcodi.io');
+      ga('send', 'pageview');
 
-    <div id="trueHeader">
+      </script>
 
-	<div class="wrapper">
-
-     <div class="container">
-
-		<!-- Logo -->
-		<div class="logo"><a href="index.html" id="logo"></a></div>
-
-        <!-- Menu -->
-        <div class="menu_main">
-
-          <nav class="navbar navbar-default fhmm" role="navigation">
-             <div class="navbar-header">
-          		<button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle">Menu <i class="fa fa-bars tbars"></i></button>
-			 </div><!-- end navbar-header -->
-
-            <div id="defaultmenu" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#principles">Principles</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a target="_blank" href="http://github.com/elcodi">Code</a></li>
-                    <li><a target="_blank" href="http://docs.elcodi.io">Docs</a></li>
-                    <li><a target="_blank" href="http://blog.elcodi.io">Blog</a></li>
-
-                </ul><!-- end nav navbar-nav -->
-		    </div><!-- end #navbar-collapse-1 -->
-
-		  </nav>
-
-		</div>
-
-
-		</div>
-
-	</div>
-
-	</div>
-</header>
-
-<div class="clearfix"></div>
-
-<div id="page_header">
-    <div class="container_full">
-        <h1>Elcodi</h1>
-        <h2>Flexible e-commerce components for symfony2</h2>
-        <a class="tp-caption slider_but8 sfb start" href="http://github.com/elcodi">Get started</a>
-    </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div class="features_sec1">
-<div class="container" id="principles">
-
-    <h2 class="section_title_drakgray">our <strong>Principles</strong></h2>
-
-    <div class="clearfix margin_top3"></div>
-
-    <div class="one_half">
-
-   		<i class="fa fa-bars"></i>
-
-        <div class="clearfix"></div>
-
-    	<h3 class="nocaps">Flexible your implementation</h3>
-
-        <p>Layered architecture</p>
-        <p>Loosely coupled code</p>
-        <p>Event oriented philosophy</p>
-
-    </div><!-- end section -->
-
-    <div class="one_half last">
-
-   		<i class="fa fa-puzzle-piece"></i>
-
-        <div class="clearfix"></div>
-
-    	<h3 class="nocaps">Extend your project</h3>
-
-        <p>Customizable model and service layers</p>
-        <p>Completely overridable entity associations</p>
-        <p>Rely only on the components you need</p>
-
-    </div><!-- end section -->
-
-    <div class="clearfix margin_top4"></div>
-
-    <div class="one_half">
-
-   		<i class="fa fa-rocket"></i>
-
-        <div class="clearfix"></div>
-
-    	<h3 class="nocaps">Lean development</h3>
-
-        <p>Sensible default implementation</p>
-        <p>Managers for encapsulating your domain logic</p>
-        <p>Factories to ensure proper entity states</p>
-
-    </div><!-- end section -->
-
-    <div class="one_half last">
-
-   		<i class="fa fa-leaf"></i>
-
-        <div class="clearfix"></div>
-
-    	<h3 class="nocaps">Control your code</h3>
-
-        <p>Test components in isolation</p>
-        <p>Rigorous taxonomy</p>
-        <p>Continuous documentation</p>
-
-    </div><!-- end section -->
-
-</div>
-</div><!-- end features section1 -->
-
-<div class="clearfix"></div>
-
-<div class="page_title">
-<div class="container" id="market">
-
-    <i class="ppal fa fa-shopping-cart"></i>
-    <h1>Elcodi Market</h1>
-    One of our goals is to create a link between all elcodi developers to exchange their implementations and even sell them.
-    <br />
-    Stay tuned on our movements for future releases
-    <br />
-    <a target="_blank" href="http://twitter.com/elcodi_dev" class="readmore_but3">Follow us! <i class="fa fa-twitter"></i></a>
-
-</div>
-</div><!-- end page title -->
-
-<div class="clearfix"></div>
-
-<div class="features_sec39">
-<div class="container" id="roadmap">
-
-	<h2 class="section_title_drakgray">our <strong>roadmap</strong></h2>
-
-    <div class="one_half"><img src="images/site-img45.png" alt="" class="limage" /></div><!-- end image section -->
-
-	<div class="one_half last">
-	<div class="rightsection">
-
-        <ul class="active">
-        	<li class="icon"><i class="fa fa-gears"></i></li>
-            <li class="text"><h3 class="nocaps">Core development</h3> <p>Much of our work focuses on developing a clear methodology and prepared to cover most of the implementations in an easy and understandable way.</p></li>
-        </ul>
-
-        <ul class="two">
-        	<li class="icon"><i class="fa fa-laptop"></i></li>
-            <li class="text"><h3 class="nocaps">Backoffice components</h3> <p>We are working on a powerful and flexible approach to managing content. The modularity and simplicity will remain our main goal</p></li>
-        </ul>
-
-        <ul class="three active">
-        	<li class="icon"><i class="fa fa-edit"></i></li>
-            <li class="text"><h3 class="nocaps">Documentation</h3> <p>And all this in parallel with a demanding development of a comprehensive and easy documentation. Use elcodi should be a positive, constructive and profitable experience for your projects</p></li>
-        </ul>
-
-	</div>
-	</div><!-- end section -->
-
-</div>
-</div><!-- end features section39 -->
-
-<div class="clearfix"></div>
-
-<div class="features_sec36">
-<div class="container">
-
-     <h2 class="section_title_white fure lessmar">Join us</h2>
-     <h4>All help will be welcome. Don't hesitate to contact us and give your feedback.
-         <br />This will make us grow up</h4>
-     <br />
-
-     <a target="_blank" href="http://github.com/elcodi" class="readmore_but13">Repository <i class="fa fa-github"></i></a>
-
-</div>
-</div><!-- end features section36 -->
-
-<div class="clearfix"></div>
-
-<div class="features_sec35">
-<div class="container" id="team">
-
-	<h2 class="section_title_drakgray"><strong>Meet</strong> Our Team</h2>
-
-	<div class="one_fourth">
-    <div class="box active">
-
-		<div class="timage"><img src="images/profiles/aldochiecchia.png" alt="" /></div>
-
-		<h3 class="nocaps">Aldo Chiecchia</h3>
-        <br />
-        <ul>
-        	<li><a target="_blank" href="http://github.com/alch"><i class="fa fa-github"></i></a></li>
-            <li><a target="_blank" href="http://twitter.com/zimage"><i class="fa fa-twitter"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/aldochiecchia"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-
-    </div>
-    </div><!-- end section -->
-
-    <div class="one_fourth">
-    <div class="box active">
-
-		<div class="timage"><img src="images/profiles/marcmorera.png" alt="" /></div>
-
-		<h3 class="nocaps">Marc Morera</h3>
-        <br />
-        <ul>
-        	<li><a target="_blank" href="http://github.com/mmoreram"><i class="fa fa-github"></i></a></li>
-            <li><a target="_blank" href="http://twitter.com/mmoreram"><i class="fa fa-twitter"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/mmoreram"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-
-    </div>
-    </div><!-- end section -->
-
-    <div class="one_fourth last">
-    <div class="box active">
-
-		<div class="timage"><img src="images/profiles/marcjordana.png" alt="" /></div>
-
-		<h3 class="nocaps">Marc Jordana</h3>
-        <br />
-        <ul>
-            <li><a target="_blank" href="http://twitter.com/marcjordana"><i class="fa fa-twitter"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/marcjordana"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-
-    </div>
-    </div><!-- end section -->
-
-    <div class="one_fourth">
-    <div class="box active">
-
-		<div class="timage"><img src="images/profiles/gerardolive.png" alt="" /></div>
-
-		<h3 class="nocaps">Gerard Olivé</h3>
-        <br />
-        <ul>
-            <li><a target="_blank" href="http://twitter.com/Gerard_Go"><i class="fa fa-twitter"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/gerardolive"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-
-    </div>
-    </div><!-- end section -->
-
-</div>
-</div><!-- end features section35 -->
-
-<div class="clearfix"></div>
-
-<div class="copyright_info two">
-<div class="container">
-
-    <div class="one_half">
-        Copyright © 2014 elcodi.com. All rights reserved.
-    </div>
-
-    <div class="one_half last">
-
-        <ul class="footer_social_links">
-            <li><a target="_blank" href="http://github.com/elcodi"><i class="fa fa-github"></i></a></li>
-            <li><a target="_blank" href="http://twitter.com/elcodi_dev"><i class="fa fa-twitter"></i></a></li>
-            <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a target="_blank" href="#"><i class="fa fa-rss"></i></a></li>
-        </ul>
-
-    </div>
-
-</div>
-</div><!-- end copyright info -->
-
-<a href="#" class="scrollup">Scroll</a><!-- end scroll to top of the page-->
-
-</div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50003565-1', 'elcodi.io');
-  ga('send', 'pageview');
-
-</script>
-
-</body>
-</html>
+  </body>
+  </html>

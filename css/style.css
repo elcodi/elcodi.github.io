@@ -2132,7 +2132,7 @@ del {
  * Custom
  * ---------------------------------------------------------------------- */
 header {
-  background-color: #7ac7bf; }
+  background-color: #66cccc; }
 
 #defaultmenu {
   float: none;
@@ -2161,7 +2161,7 @@ header {
 
 #page_header {
   z-index: -1;
-  min-height: 500px;
+  min-height: 400px;
   text-align: center;
   background-image: url("../images/background.jpg");
   background-position: left top;
@@ -2235,7 +2235,12 @@ header {
 .features_sec39 i {
   background-color: #272727; }
 .features_sec39 ul:hover i, .features_sec39 ul.active i {
-  background-color: #f2a138; }
+  background-color: #f2a138;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 /* ----------------------------------------------------------------------
  * Site structure
@@ -6638,5 +6643,3 @@ a.knowmore_but {
   text-indent: -9999px;
   background: url(../images/scroll-top-arrow.png) no-repeat left top;
   z-index: 999; }
-
-/*# sourceMappingURL=style.css.map */

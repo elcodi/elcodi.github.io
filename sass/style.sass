@@ -69,7 +69,7 @@ $image-balloon:     '#{$image-route}balloon.png'
  * ----------------------------------------------------------------------
 
 header
-    background-color: #7ac7bf
+    background-color: $color-first
 
 #defaultmenu
     float: none
@@ -192,6 +192,7 @@ header
     ul
         &:hover i, &.active i
             background-color: $color-second
+            +transition(all, 0.5s, ease)
 
 
 /* ----------------------------------------------------------------------

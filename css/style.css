@@ -1130,12 +1130,12 @@ del {
   .post_meta_links li.post_by {
     float: left;
     padding: 0px 0px 0px 18px;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid lightgray;
     background: url(../images/blog/icon-by-user.png) no-repeat 0px 5px; }
   .post_meta_links li.post_categoty {
     float: left;
     padding: 0px 0px 0px 25px;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid lightgray;
     background: url(../images/blog/icon-category.png) no-repeat 9px 6px; }
   .post_meta_links li.post_comments {
     float: left;
@@ -2198,6 +2198,11 @@ header {
   .features_sec1 i {
     border: 1px solid #f2a138;
     background-color: #f2a138; }
+    .features_sec1 i:hover {
+      color: #f2a138;
+      background-color: white; }
+  .features_sec1 p {
+    font-size: 13px; }
   .features_sec1 .button-first {
     position: absolute;
     top: -30px;
@@ -2379,7 +2384,7 @@ header {
       .top_nav .left li a {
         color: #9b9b9b; }
         .top_nav .left li a:hover {
-          color: lightgrey; }
+          color: lightgray; }
   .top_nav .right {
     float: left;
     width: 50%; }
@@ -2404,7 +2409,7 @@ header {
       .top_nav .right li a {
         color: #9b9b9b; }
         .top_nav .right li a:hover {
-          color: lightgrey; }
+          color: lightgray; }
 
 /* header area */
 .logo {
@@ -2459,7 +2464,7 @@ h2.section_title_drakgray {
     margin-bottom: 40px; }
   h2.section_title_drakgray.bline {
     background: none;
-    border-bottom: 1px solid lightgrey; }
+    border-bottom: 1px solid lightgray; }
   h2.section_title_drakgray.left {
     margin-bottom: 40px;
     background: url(../images/title-hline2.png) no-repeat left bottom; }
@@ -2533,18 +2538,6 @@ h3.ipages_title1 {
     line-height: 80px;
     border-radius: 100%;
     margin-bottom: 30px; }
-  .features_sec1 .one_fourth:hover i {
-    color: #fc4242;
-    border: 1px solid #fc4242;
-    background-color: white; }
-  .features_sec1 .one_fourth:hover h3, .features_sec1 .one_fourth:hover .readmore_but1 {
-    color: #fc4242; }
-  .features_sec1 .one_fourth.active i {
-    color: #fc4242;
-    border: 1px solid #fc4242;
-    background-color: white; }
-  .features_sec1 .one_fourth.active h3, .features_sec1 .one_fourth.active .readmore_but1 {
-    color: #fc4242; }
 
 /* latest works */
 .latest_works {
@@ -3706,7 +3699,7 @@ ul.fun_facts {
       margin-top: 25px;
       margin-bottom: 20px;
       padding-bottom: 8px;
-      border-bottom: 1px solid lightgrey;
+      border-bottom: 1px solid lightgray;
       text-transform: uppercase; }
     .features_sec29 .box ul {
       padding: 0px;
@@ -4628,7 +4621,7 @@ ul.footer_social_links {
   .footer_social_links.four li:hover {
     background: none; }
 .footer_social_links.three li {
-  background-color: lightgrey; }
+  background-color: lightgray; }
   .footer_social_links.three li:hover {
     background-color: #999999; }
   .footer_social_links.three li i {
@@ -4755,7 +4748,7 @@ ul.fsocials {
   font-size: 16px;
   text-transform: uppercase;
   padding: 14px 30px 13px 30px;
-  border: 2px solid lightgrey; }
+  border: 2px solid lightgray; }
   .readmore_but6:hover {
     color: white;
     background-color: #999999; }
@@ -4803,7 +4796,7 @@ ul.fsocials {
     background-color: #272727; }
 
 .readmore_but11 {
-  color: lightgrey;
+  color: lightgray;
   padding: 8px 13px;
   background-color: #272727;
   text-transform: uppercase; }
@@ -6187,7 +6180,7 @@ ul.post_meta_links_small {
     padding-top: 0px;
     overflow: hidden; }
     .comment_content .comment_text a {
-      color: lightgrey;
+      color: lightgray;
       margin-top: 5px;
       float: left; }
       .comment_content .comment_text a:hover {

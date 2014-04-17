@@ -1130,12 +1130,12 @@ del {
   .post_meta_links li.post_by {
     float: left;
     padding: 0px 0px 0px 18px;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid lightgrey;
     background: url(../images/blog/icon-by-user.png) no-repeat 0px 5px; }
   .post_meta_links li.post_categoty {
     float: left;
     padding: 0px 0px 0px 25px;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid lightgrey;
     background: url(../images/blog/icon-category.png) no-repeat 9px 6px; }
   .post_meta_links li.post_comments {
     float: left;
@@ -2132,7 +2132,13 @@ del {
  * Custom
  * ---------------------------------------------------------------------- */
 header {
-  background-color: #66cccc; }
+  background-color: #66cccc;
+  position: relative;
+  z-index: 100;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2) ;
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2) ;
+  -o-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2) ;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2) ; }
 
 #defaultmenu {
   float: none;
@@ -2369,7 +2375,7 @@ header {
       .top_nav .left li a {
         color: #9b9b9b; }
         .top_nav .left li a:hover {
-          color: lightgray; }
+          color: lightgrey; }
   .top_nav .right {
     float: left;
     width: 50%; }
@@ -2394,7 +2400,7 @@ header {
       .top_nav .right li a {
         color: #9b9b9b; }
         .top_nav .right li a:hover {
-          color: lightgray; }
+          color: lightgrey; }
 
 /* header area */
 .logo {
@@ -2449,7 +2455,7 @@ h2.section_title_drakgray {
     margin-bottom: 40px; }
   h2.section_title_drakgray.bline {
     background: none;
-    border-bottom: 1px solid lightgray; }
+    border-bottom: 1px solid lightgrey; }
   h2.section_title_drakgray.left {
     margin-bottom: 40px;
     background: url(../images/title-hline2.png) no-repeat left bottom; }
@@ -3696,7 +3702,7 @@ ul.fun_facts {
       margin-top: 25px;
       margin-bottom: 20px;
       padding-bottom: 8px;
-      border-bottom: 1px solid lightgray;
+      border-bottom: 1px solid lightgrey;
       text-transform: uppercase; }
     .features_sec29 .box ul {
       padding: 0px;
@@ -4619,7 +4625,7 @@ ul.footer_social_links {
   .footer_social_links.four li:hover {
     background: none; }
 .footer_social_links.three li {
-  background-color: lightgray; }
+  background-color: lightgrey; }
   .footer_social_links.three li:hover {
     background-color: #999999; }
   .footer_social_links.three li i {
@@ -4746,7 +4752,7 @@ ul.fsocials {
   font-size: 16px;
   text-transform: uppercase;
   padding: 14px 30px 13px 30px;
-  border: 2px solid lightgray; }
+  border: 2px solid lightgrey; }
   .readmore_but6:hover {
     color: white;
     background-color: #999999; }
@@ -4794,7 +4800,7 @@ ul.fsocials {
     background-color: #272727; }
 
 .readmore_but11 {
-  color: lightgray;
+  color: lightgrey;
   padding: 8px 13px;
   background-color: #272727;
   text-transform: uppercase; }
@@ -6178,7 +6184,7 @@ ul.post_meta_links_small {
     padding-top: 0px;
     overflow: hidden; }
     .comment_content .comment_text a {
-      color: lightgray;
+      color: lightgrey;
       margin-top: 5px;
       float: left; }
       .comment_content .comment_text a:hover {

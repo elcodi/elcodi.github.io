@@ -69,7 +69,12 @@ $image-balloon:     '#{$image-route}balloon.png'
  * ----------------------------------------------------------------------
 
 header
+
     background-color: $color-first
+    position: relative
+    z-index: 100
+    +box-shadow(0px, 2px, 8px, 0px, rgba(0,0,0,0.2))
+    //border-bottom: 3px solid #303030
 
 #defaultmenu
     float: none

@@ -306,6 +306,26 @@
                                                                                                     
                 }));
 
+                var headerHeight = $("#header").outerHeight();
+                var headerTopHeight = $("#topHeader .wrapper .top_nav").outerHeight();
+                var headerBottomHeight = $(".header-bottom").outerHeight();
+                var $window = $(window);
+
+                $(window).on("scroll", function(e) {
+                    var scrollTop = $window.scrollTop();
+
+                    if (scrollTop - headerTopHeight > 0) {
+                        $("#topHeader").hide();
+                        $("#header").css("position", "fixed").css("width", "100%").css("z-index", "100").css("top", "0").css("left", "0");
+                        $(".site_wrapper").css("margin-top", headerHeight+"px");
+
+                    } else if (1 || scrollTop - headerHeight > 0) {
+                        $("#header").css("position", "relative").css("width", "auto");
+                        $(".site_wrapper").css("margin-top", 0);                        
+                        $("#topHeader").show();
+                    }
+                });
+
 
             });  
             

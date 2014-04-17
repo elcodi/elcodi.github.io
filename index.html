@@ -32,6 +32,7 @@
 
         <!-- responsive devices styles -->
         <link href="js/mainmenu/bootstrap.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     </head>
 
     <body>
@@ -243,6 +244,73 @@
             </div>
             <a href="#" class="scrollup">Scroll</a>
         </div>
+
+        <script>
+            
+            $(document).ready(function(){
+
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollup').fadeIn();
+                    } else {
+                        $('.scrollup').fadeOut();
+                    }
+                });
+
+                $('.scrollup').click(function(){
+                    $("html, body").animate({ scrollTop: 0 }, 500).promise().done(
+                        function(e) {
+                            console.log("done");
+                            if (!!(window.history && history.pushState)) {
+                                // we will push a new url to the history stack
+                                // only if we support html5 history API. 
+                                // Otherwise no history is preserved upon navigating links
+                                window.history.pushState({}, "", "#home");
+                            }
+                        }
+                    );
+                    return false;
+                });
+
+                $(".nav a[href^='#']").on('click', (function(e) { 
+                    
+                    e.stopPropagation();
+                    e.preventDefault();
+
+                    var hash = ($(this).attr("href")); 
+                    var scrollto = hash.replace("#","");                                     
+
+                    // we need to apply the animation to both "html" and "body"
+                    // elements for browser compatibility
+                    $("body, html").animate(
+
+                            { scrollTop: $("#"+scrollto).offset().top }
+
+                        ).promise().done(function() {
+
+                            // we are actually assigning two event handlers, one for the "html" 
+                            // and another for the "body" element. Animate()'s "success"
+                            // callback will be called twice. We can use a Promise() so that
+                            // our history change will kick in when both handlers have returned
+                            // 
+                            // see http://api.jquery.com/promise/
+                            // see http://stackoverflow.com/questions/8790752/callback-of-animate-gets-called-twice-jquery#8791175
+
+                            if (!!(window.history && history.pushState)) {
+                                // we will push a new url to the history stack
+                                // only if we support html5 history API. 
+                                // Otherwise no history is preserved upon navigating links
+                                window.history.pushState({}, "", hash);
+                            }
+                        });
+                                                                                                    
+                }));
+
+
+            });  
+            
+
+        </script>
 
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

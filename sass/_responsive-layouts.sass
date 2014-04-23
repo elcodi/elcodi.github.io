@@ -133,14 +133,18 @@
 @media only screen and (min-width: 768px) and (max-width: 999px)
   .container
     width: 747px
-    margin: auto
+    margin: auto    
   .menu_main
-    float: right
-    width: 68%
+    // float: right
+    // width: 68%
     margin-top: 0px
     margin-bottom: 0px
   #trueHeader #logo
     margin-top: 8px
+
+  #defaultmenu .nav > li:last-child > a
+    margin-right: 0
+
   .features_sec4
     .two_third, .one_third
       width: 100%
@@ -294,7 +298,9 @@
         &.two, &.three
           margin-top: 87px
       float: left
-      width: 100%
+      width: 90%
+      margin-left: 5%
+      margin-right: 5%
       padding-bottom: 50px
   .features_sec43 li.text
     width: 82%
@@ -896,11 +902,12 @@
     .left
       width: 100%
     .right
-      width: 100%
-      ul
-        float: left
-      li
-        margin: 10px 5px 0px 0px
+      //width: 100%
+      //ul
+      //  float: left
+      //li
+      //  margin: 10px 5px 0px 0px
+      display: none
   #trueHeader #logo
     background-position: center
   .logo

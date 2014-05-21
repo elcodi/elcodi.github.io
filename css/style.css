@@ -3217,6 +3217,11 @@ ul.list_3 {
     color: white;
     margin-right: 8px; }
 
+#page_header .container_full h1 {
+  display: none;}
+#page_header .container_full h2 {
+  margin-top: 25px;}
+
 ul.list_4 {
   float: left;
   padding: 0px;
@@ -6646,3 +6651,4 @@ a.knowmore_but {
 
   .top_nav .right li.link {
     margin-top: 10px; } }
+

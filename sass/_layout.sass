@@ -1,3 +1,7 @@
+/* ======================================================================
+ * LAYOUT
+ * ======================================================================
+
 /* ----------------------------------------------------------------------
  * General
  * ----------------------------------------------------------------------
@@ -7,12 +11,13 @@ $color-second:      #f2a138     // orange
 $color-third:       #ffff00     // yellow
 
 $font-sans:         arial, sans-serif
-$font-first:        'Montserrat', $font-sans
-$font-second:       'Open Sans', $font-sans
+$font-first:        "Montserrat", $font-sans
+$font-second:       "Open Sans", $font-sans
 
-$image-route:       '../images/'
-$image-background:  '#{$image-route}background.jpg'
-$image-balloon:     '#{$image-route}balloon.png'
+$image-route:       "../images/"
+$image-background:  "#{$image-route}background.jpg"
+$image-balloon:     "#{$image-route}balloon.png"
+
 
 /* ----------------------------------------------------------------------
  * Normalize
@@ -48,6 +53,10 @@ $image-balloon:     '#{$image-route}balloon.png'
     @extend %button
     color: black
     background-color: white
+
+.button-fourth
+    @extend %button
+    background-color: $color-second
 
 
 /* ----------------------------------------------------------------------
@@ -130,11 +139,17 @@ header
     p
         font-size: 13px
 
-    .button-first
+    .button-first,
+    .button-fourth
         position: absolute
-        top: -30px
-        left: 50%
         margin-left: -90px
+        top: -30px
+
+    .button-first
+        left: 42%
+
+    .button-fourth
+        left: 58%
 
 
 .page_title
@@ -916,26 +931,32 @@ h3
     text-align: center
     padding: 70px 0px
     background: url(../images/parallax-bg5.jpg) repeat-y left top
+
     .hblog
         float: left
         width: 100%
         text-align: left
         background-color: #fff
         border-bottom: 4px solid #fff
+
         img
             width: 100%
+
         .content2
             float: left
             width: 84%
             padding: 5% 8% 8% 8%
+
         h5
             margin-bottom: 4px
             font-weight: 500
+
         .date
             float: left
             width: 100%
             font-size: 13px
             color: #999
+
         .comments
             float: left
             width: 100%
@@ -946,13 +967,17 @@ h3
             margin-bottom: 18px
             border-top: 1px solid #e3e3e3
             border-bottom: 1px solid #e3e3e3
+
             i
                 color: #999
                 margin-right: 4px
+
             a
                 color: #727272
+
                 &:hover
                     color: #fc4242
+
         &:hover, &.active
             border-bottom: 4px solid #fc4242
             -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3)
@@ -2799,7 +2824,7 @@ ul.fsocials
         margin: 5px 0 0 0px
         background-color: #fc4242
         border: 0px
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-size: 12px
         text-transform: uppercase
         font-weight: 600
@@ -3002,7 +3027,7 @@ ul.list_4
     margin-top: 50px
 
 .big_text1
-    font-family: 'Raleway', sans-serif
+    font-family: "Raleway", sans-serif
     font-weight: 400
     font-size: 27px
     line-height: 40px
@@ -3162,7 +3187,7 @@ ul.recent_posts_list
     border: 1px solid #eee
     border-bottom: 5px solid #eee
     text-align: center
-    font-family: 'Open Sans', sans-serif
+    font-family: "Open Sans", sans-serif
     strong
         display: block
         font-size: 145px
@@ -3187,7 +3212,7 @@ ul.recent_posts_list
 
 a
     &.but_goback, &.but_ok_2, &.but_wifi, &.but_warning_sign, &.but_user, &.but_tag, &.but_table, &.but_star, &.but_search, &.but_phone, &.but_pencil, &.but_new_window, &.but_music, &.but_hand_right, &.but_thumbs_down, &.but_thumbs_up, &.but_globe, &.but_hospital, &.but_coffe_cup, &.but_settings, &.but_chat, &.but_play_button, &.but_remove_2, &.but_lock, &.but_shopping_cart, &.but_exclamation_mark, &.but_info, &.but_question_mark, &.but_minus, &.but_plus, &.but_folder_open, &.but_file, &.but_envelope, &.but_edit, &.but_cogwheel, &.but_check, &.but_camera, &.but_calendar, &.but_bookmark, &.but_book, &.but_download, &.but_pdf, &.but_word_doc, &.but_woman
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-size: 14px
         color: #fff
         font-weight: 600
@@ -3541,7 +3566,7 @@ p.error
     float: left
     text-align: center
     overflow: hidden
-    font-family: 'Open Sans', sans-serif
+    font-family: "Open Sans", sans-serif
     font-weight: normal
 
 .dropcap1
@@ -3674,7 +3699,7 @@ ul.list_empty
         color: #fff
         border-top: 3px solid #272727
         border-bottom: 1px solid #818181
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
     .price
         float: left
@@ -3684,7 +3709,7 @@ ul.list_empty
         text-align: center
         font-size: 40px
         color: #fff
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
         i
             font-size: 14px
@@ -3759,7 +3784,7 @@ ul.list_empty
         color: #fff
         border-top: 3px solid #cf2d2d
         border-bottom: 1px solid #fa6464
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
     .price
         float: left
@@ -3769,7 +3794,7 @@ ul.list_empty
         text-align: center
         font-size: 45px
         color: #fff
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
         i
             font-size: 14px
@@ -3822,7 +3847,7 @@ ul.list_empty
         color: #fff
         border-top: 3px solid #272727
         border-bottom: 1px solid #818181
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
     .price
         float: left
@@ -3832,7 +3857,7 @@ ul.list_empty
         text-align: center
         font-size: 40px
         color: #fff
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
         i
             font-size: 14px
@@ -3888,7 +3913,7 @@ ul.list_empty
         color: #fff
         border-top: 3px solid #cf2d2d
         border-bottom: 1px solid #fa6464
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
     .price
         float: left
@@ -3898,7 +3923,7 @@ ul.list_empty
         text-align: center
         font-size: 45px
         color: #fff
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: normal
         i
             font-size: 14px
@@ -3971,7 +3996,7 @@ ul.list_empty
             float: left
             margin-top: 3px
             text-transform: none
-            font-family: 'Open Sans', sans-serif
+            font-family: "Open Sans", sans-serif
             font-weight: 300
             font-size: 30px
             &:hover
@@ -4126,7 +4151,7 @@ ul.post_meta_links_small
         font-weight: normal
         display: block
         margin-bottom: 10px
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: 300
     &:hover strong
         color: #333
@@ -4139,7 +4164,7 @@ ul.post_meta_links_small
         border-top: 1px solid #f3f3f3
         width: 40px
         background-color: #fc4242
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: 300
     &:hover i
         background-color: #383634
@@ -4193,7 +4218,7 @@ ul.post_meta_links_small
         float: left
         margin-right: 20px
     a
-        font-family: 'Open Sans' !important
+        font-family: "Open Sans" !important
         font-weight: normal
         font-weight: 600
         color: #333
@@ -4206,7 +4231,7 @@ ul.post_meta_links_small
     clear: both
     padding: 10px 0
     margin-bottom: 20px
-    font-family: 'Open Sans', sans-serif
+    font-family: "Open Sans", sans-serif
     b
         float: left
         margin: 0px 5px 2px 0
@@ -4281,7 +4306,7 @@ ul.post_meta_links_small
     background-color: #eee
     border: 1px solid #ddd
     padding: 9px 13px
-    font-family: 'Open Sans', sans-serif
+    font-family: "Open Sans", sans-serif
     font-weight: 600
     border-radius: 4px
     color: #333
@@ -4703,7 +4728,7 @@ ul.small_social_links
         margin: 0px
         font-size: 13px
         color: #333
-        font-family: 'Open Sans', sans-serif
+        font-family: "Open Sans", sans-serif
         font-weight: 600
         text-transform: uppercase
     i

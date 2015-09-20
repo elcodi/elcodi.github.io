@@ -7,7 +7,7 @@
 // -------------------------------------------------------------------
 
 $color_text: white
-$color_background: orange
+$color_background: #183d4c
 
 
 // -------------------------------------------------------------------
@@ -16,11 +16,12 @@ $color_background: orange
 
 .button_primary
     @extend %button
-    padding: 0.6em
-    min-width: 150px
+    font-size: 18px
+    padding: 1em 2em
     font-weight: bold
     color: $color_text
-    +border-radius(2px)
+    +border-radius(8px)
+    text-transform: uppercase
     background-color: $color_background
     border-bottom: 1px solid darken($color_background, 10)
 

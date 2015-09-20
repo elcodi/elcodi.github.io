@@ -1,5 +1,5 @@
 // ===================================================================
-/* BUTTON PRIMARY
+/* FOOTER
 // ===================================================================
 
 // -------------------------------------------------------------------
@@ -7,26 +7,23 @@
 // -------------------------------------------------------------------
 
 $color_text: white
-$color_background: #183d4c
+$color_background: #0b1f2d
 
 
 // -------------------------------------------------------------------
 // Application
 // -------------------------------------------------------------------
 
-.button_primary
-    @extend %button
-    font-size: 16px
-    font-weight: bold
+.footer
+    +clearfix
+    padding: 3em
     color: $color_text
-    padding: 0.8em 2em
-    +border-radius(8px)
-    text-transform: uppercase
     background-color: $color_background
-    border-bottom: 1px solid darken($color_background, 10)
 
-    &:hover, &:focus, &:active, &:visited
-        color: $color_text
+    .brand
+        float: left
+        width: 150px
+        display: block
 
-    &:hover
-        background-color: lighten($color_background, 10)
+    .list_navigator
+        float: right

@@ -1,26 +1,31 @@
 // ===================================================================
-/* SECTION DARK
+/* FONTS
 // ===================================================================
 
 // -------------------------------------------------------------------
 // Config
 // -------------------------------------------------------------------
 
-$color_text: #185462
-$color_background: #0b1f2d
+$weights: 400, 700
+
+
+// -------------------------------------------------------------------
+// Constructor
+// -------------------------------------------------------------------
+
+=font($name)
+
+    @each $weight in $weights
+
+        $font_name: "#{$name}#{$weight}"
+
+        @font-face
+            font-family: $font_name
+            src: url(../fonts/#{$name}/#{$font_name}.ttf)
 
 
 // -------------------------------------------------------------------
 // Application
 // -------------------------------------------------------------------
 
-.section_dark
-    @extend %section
-    color: $color_text
-    background-color: $color_background
-
-    h2
-        font-size: 24px
-        color: $color_text
-        text-align: center
-        margin-bottom: 2em
++font("montserrat")

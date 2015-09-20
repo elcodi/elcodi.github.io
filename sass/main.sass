@@ -11,13 +11,17 @@
 @import config/reset
 @import config/variables
 @import config/mixins
+@import config/grid
 @import config/normalize
 
 @import element/button/button
 @import element/button/button_primary
 
-@import component/navigator/navigator
+@import component/list/list_3columns
+@import component/list/list_5columns
+@import component/list/list_navigator
 
+@import layout/header/header
 @import layout/section/section
 @import layout/section/section_blue
 @import layout/section/section_dark
@@ -29,20 +33,6 @@
 // -------------------------------------------------------------------
 // Application
 // -------------------------------------------------------------------
-
-// layout
-
-.header
-    +clearfix
-    padding: 3em
-
-    .brand
-        float: left
-
-    .navigator
-        float: right
-        margin-top: 2em
-
 
 .content
     +clearfix

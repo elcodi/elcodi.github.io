@@ -1,5 +1,5 @@
 // ===================================================================
-/* NAVIGATOR
+/* HEADER
 // ===================================================================
 
 // -------------------------------------------------------------------
@@ -7,27 +7,22 @@
 // -------------------------------------------------------------------
 
 $color_text: #545454
-$color_background: $color_turquoise
+$color_background: white
 
 
 // -------------------------------------------------------------------
 // Application
 // -------------------------------------------------------------------
 
-.navigator
+.header
     +clearfix
+    padding: 3em
+    color: $color_text
+    background-color: $color_background
 
-    li
-        display: inline-block
+    .brand
+        float: left
 
-    a
-        display: block
-        font-weight: bold
-        color: $color_text
-        padding: 0.9em 1em
-        text-decoration: none
-        text-transform: uppercase
-
-        &:hover
-            color: white
-            background-color: $color_background
+    .list_navigator
+        float: right
+        margin-top: 2em

@@ -1,0 +1,62 @@
+// ===================================================================
+/* CARD CODE
+// ===================================================================
+
+// -------------------------------------------------------------------
+// Config
+// -------------------------------------------------------------------
+
+$size_number: 36px
+$color_text: #545454
+$color_head: #47d5cd
+$color_number: #3cc7bf
+$color_background: white
+
+
+// -------------------------------------------------------------------
+// Application
+// -------------------------------------------------------------------
+
+.card
+    +clearfix
+    padding: 1em
+    text-align: center
+    +border-radius(10px)
+    background-color: white
+
+    > h4
+        font-size: 18px
+        color: $color_head
+        margin-bottom: 8px
+
+    > p
+        font-size: 12px
+        color: $color_text
+        margin-bottom: 2em
+        line-height: 1.5em
+
+    .number
+        color: white
+        display: block
+        margin: 1em auto
+        text-align: center
+        +size($size_number)
+        +border-radius(100%)
+        font-family: $font_head
+        line-height: $size_number
+        font-size: $size_number / 2
+        background-color: $color_number
+
+    .code
+        padding: 1em
+        text-align: left
+        min-height: 100px
+        +border-radius(4px)
+        font-family: "courier"
+        background-color: #e0e5e9
+
+        span
+            display: block
+            font-size: 8px
+            line-height: 1.5em
+            margin-bottom: 0.4em

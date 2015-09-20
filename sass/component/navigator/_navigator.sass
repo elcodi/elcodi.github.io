@@ -1,0 +1,33 @@
+// ===================================================================
+/* NAVIGATOR
+// ===================================================================
+
+// -------------------------------------------------------------------
+// Config
+// -------------------------------------------------------------------
+
+$color_text: #545454
+$color_background: $color_turquoise
+
+
+// -------------------------------------------------------------------
+// Application
+// -------------------------------------------------------------------
+
+.navigator
+    +clearfix
+
+    li
+        display: inline-block
+
+    a
+        display: block
+        font-weight: bold
+        color: $color_text
+        padding: 0.9em 1em
+        text-decoration: none
+        text-transform: uppercase
+
+        &:hover
+            color: white
+            background-color: $color_background

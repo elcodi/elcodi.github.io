@@ -1,0 +1,31 @@
+// ===================================================================
+/* BUTTON PRIMARY
+// ===================================================================
+
+// -------------------------------------------------------------------
+// Config
+// -------------------------------------------------------------------
+
+$color_text: white
+$color_background: orange
+
+
+// -------------------------------------------------------------------
+// Application
+// -------------------------------------------------------------------
+
+.button_primary
+    @extend %button
+    padding: 0.6em
+    min-width: 150px
+    font-weight: bold
+    color: $color_text
+    +border-radius(2px)
+    background-color: $color_background
+    border-bottom: 1px solid darken($color_background, 10)
+
+    &:hover, &:focus, &:active, &:visited
+        color: $color_text
+
+    &:hover
+        background-color: lighten($color_background, 10)

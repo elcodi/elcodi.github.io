@@ -1,5 +1,59 @@
-.header
+// ===================================================================
+/* MAIN
+// ===================================================================
+
+// -------------------------------------------------------------------
+// Imports
+// -------------------------------------------------------------------
+
+// element > component > layout > template > page
+
+@import config/reset
+@import config/variables
+@import config/mixins
+
+@import element/button/button
+@import element/button/button_primary
+
+@import component/navigator/navigator
+// @import component/form/form_contact
+
+
+// -------------------------------------------------------------------
+// Application
+// -------------------------------------------------------------------
+
+body
+    +font-smoothing
+    font-size: $size_font
+    font-family: $font_base
+
+img
     width: 100%
+    vertical-align: bottom
+
+
+// layout
+
+.header
+    +clearfix
+    padding: 3em
+
+    .brand
+        float: left
+
+    .navigator
+        float: right
+        margin-top: 2em
+
 
 .content
-    width: 100%
+    +clearfix
+
+
+// elements
+
+.brand
+    width: 300px
+    height: 78px
+    display: block

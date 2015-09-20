@@ -1,0 +1,109 @@
+// ===================================================================
+// MIXINS
+// ===================================================================
+
+// -------------------------------------------------------------------
+// Utilities
+// -------------------------------------------------------------------
+
+=clearfix
+    *zoom: 1
+
+    &:before, &:after
+        content: ""
+        display: table
+        line-height: 0
+
+    &:after
+        clear: both
+
+=position($position: absolute, $v-property: top, $v-value: 0, $h-property: left, $h-value: 0, $zindex: 10)
+    position: $position
+    #{$v-property}: $v-value
+    #{$h-property}: $h-value
+    z-index: $zindex
+
+=font-smoothing
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+=ellipsis
+    width: 100%
+    display: block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+=reset-placeholders
+    ::-webkit-input-placeholder
+        font-style: normal
+
+    :-moz-placeholder
+        font-style: normal
+
+    ::-moz-placeholder
+        font-style: normal
+
+    :-ms-input-placeholder
+        font-style: normal
+
+=grid($columns, $margin)
+    float: left
+    margin-right: $margin
+    width: ((100 + $margin) / $columns) - $margin
+
+    &:last-child
+        margin-right: 0
+
+
+// -------------------------------------------------------------------
+// Shape
+// -------------------------------------------------------------------
+
+=size($width, $height: $width)
+    width: $width
+    height: $height
+
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+
+=box-sizing($boxmodel)
+    -webkit-box-sizing: $boxmodel
+    -moz-box-sizing: $boxmodel
+    box-sizing: $boxmodel
+
+
+// -------------------------------------------------------------------
+// Effects
+// -------------------------------------------------------------------
+
+=transition($transition)
+    -webkit-transition: $transition
+    -moz-transition: $transition
+    -o-transition: $transition
+    transition: $transition
+
+=transform($transform)
+    -webkit-transform: $transform
+    -moz-transform: $transform
+    -ms-transform: $transform
+    transform: $transform
+
+=box-shadow($shadow)
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow: $shadow
+    box-shadow: $shadow
+
+=opacity($opacity)
+    opacity: $opacity / 100
+
+=background-gradient($color_from, $color_to)
+    background: -moz-linear-gradient(top, $color_from 0%, $color_to 100%)
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $color_from), color-stop(100%, $color_to))
+    background: -webkit-linear-gradient(top, $color_from 0%, $color_to 100%)
+    background: -o-linear-gradient(top, $color_from 0%, $color_to 100%)
+    background: -ms-linear-gradient(top, $color_from 0%, $color_to 100%)
+    background: linear-gradient(to bottom, $color_from 0%, $color_to 100%)
+

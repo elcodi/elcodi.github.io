@@ -10,8 +10,6 @@
 
 - Replace fake images by correct images in showcase section
 
-- Include contact logos and links
-
 - Replace footer links by corporate info like terms and conditions
 
 - Include button links in all site including headers

@@ -1,7 +1,5 @@
 # BACKLOG
 
-- Include js to scrolldown sections by id
-
 - Markup main section headers
 
 - Include main section background image and effects

@@ -8,13 +8,7 @@
 
 - Update paragraph fonts by correct serif font
 
-- Replace fake images by correct images in stats section
-
-- Replace fake logos by correct logos in partners section
-
 - Replace fake images by correct images in showcase section
-
-- Replace fake images by correct images in admin and demo section
 
 - Include contact logos and links
 

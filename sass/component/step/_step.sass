@@ -11,14 +11,11 @@ $color_background: white
 
 
 // -------------------------------------------------------------------
-// Application
+// Viewport : mobile
 // -------------------------------------------------------------------
 
 .step
     padding: 0 4em
-
-    a:hover
-        opacity: 0.6
 
     h3
         font-size: 24px
@@ -32,3 +29,13 @@ $color_background: white
 
     span
         line-height: 1.5em
+
+
+// -------------------------------------------------------------------
+// Viewport : tablet & desktop
+// -------------------------------------------------------------------
+
+@media (min-width: $size_tablet)
+
+    .step a:hover
+        opacity: 0.6

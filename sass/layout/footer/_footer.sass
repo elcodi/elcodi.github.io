@@ -11,23 +11,35 @@ $color_background: #0b1f2d
 
 
 // -------------------------------------------------------------------
-// Application
+// Viewport : mobile
 // -------------------------------------------------------------------
 
 .footer
     +clearfix
     padding: 3em
+    display: none
     color: $color_text
     background-color: $color_background
 
     .brand
-        float: left
-        width: 150px
         display: block
 
-    .list_navigator
-        float: right
 
-        a:hover
-            color: white
-            background-color: transparent
+// -------------------------------------------------------------------
+// Viewport : tablet & desktop
+// -------------------------------------------------------------------
+
+@media (min-width: $size_tablet)
+
+    .footer
+
+        .brand
+            float: left
+            width: 150px
+
+        .list_navigator
+            float: right
+
+            a:hover
+                color: white
+                background-color: transparent

@@ -11,15 +11,15 @@ $color_background: #183d4c
 
 
 // -------------------------------------------------------------------
-// Application
+// Viewport : mobile
 // -------------------------------------------------------------------
 
 .button_primary
     @extend %button
-    font-size: 16px
-    font-weight: bold
+    width: 100%
+    font-size: 18px
     color: $color_text
-    padding: 0.8em 2em
+    padding: 1.2em 2em
     +border-radius(8px)
     text-transform: uppercase
     background-color: $color_background
@@ -30,3 +30,14 @@ $color_background: #183d4c
 
     &:hover
         background-color: lighten($color_background, 10)
+
+
+// -------------------------------------------------------------------
+// Viewport : tablet & desktop
+// -------------------------------------------------------------------
+
+@media (min-width: $size_tablet)
+
+    .button_primary
+        width: auto
+        font-size: 16px

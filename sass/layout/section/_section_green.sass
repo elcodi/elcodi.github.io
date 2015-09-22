@@ -11,13 +11,12 @@ $color_background: #3cc7bf
 
 
 // -------------------------------------------------------------------
-// Application
+// Viewport : mobile
 // -------------------------------------------------------------------
 
 .section_green
     @extend %section
     color: $color_text
-    text-align: left
     background-color: $color_background
 
     h3
@@ -25,12 +24,25 @@ $color_background: #3cc7bf
         line-height: 1.5em
 
     &.lanscape
-        min-height: 500px
-        background-image: url('../img/background.png')
-        background-repeat: no-repeat
-        background-position-x: right
-        background-position-y: center
+        background: $color_background
 
-    .about_us
-        width: 45%
-        float: left
+
+// -------------------------------------------------------------------
+// Viewport : tablet & desktop
+// -------------------------------------------------------------------
+
+@media (min-width: $size_tablet)
+
+    .section_green
+        text-align: left
+
+        &.lanscape
+            min-height: 500px
+            background-image: url('../img/background.png')
+            background-repeat: no-repeat
+            background-position-x: right
+            background-position-y: center
+
+        .about_us
+            width: 45%
+            float: left

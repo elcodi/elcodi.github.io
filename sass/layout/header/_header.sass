@@ -11,20 +11,34 @@ $color_background: white
 
 
 // -------------------------------------------------------------------
-// Application
+// Viewport : mobile
 // -------------------------------------------------------------------
 
 .header
     +clearfix
     padding: 3em
     color: $color_text
+    text-align: center
     background-color: $color_background
 
     .brand
-        float: left
-        width: 300px
+        width: 80%
         display: block
+        margin: 0 auto 2em
 
-    .list_navigator
-        float: right
-        margin-top: 2.5em
+
+// -------------------------------------------------------------------
+// Viewport : tablet & desktop
+// -------------------------------------------------------------------
+
+@media (min-width: $size_tablet)
+
+    .header
+
+        .brand
+            float: left
+            width: 300px
+
+        .list_navigator
+            float: right
+            margin-top: 2.5em

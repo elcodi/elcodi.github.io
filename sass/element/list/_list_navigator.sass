@@ -11,23 +11,35 @@ $color_background: $color_turquoise
 
 
 // -------------------------------------------------------------------
-// Application
+// Viewport : mobile
 // -------------------------------------------------------------------
 
 .list_navigator
     +clearfix
 
-    > li
-        display: inline-block
+    li
+        display: block
 
-        > a
-            display: block
-            color: $color_text
-            padding: 0.9em 1em
-            text-decoration: none
-            text-transform: uppercase
-            font-family: $font_head
+    a
+        display: block
+        color: $color_text
+        padding: 0.9em 1em
+        text-decoration: none
+        font-family: $font_head
+        text-transform: uppercase
 
-            &:hover
-                color: white
-                background-color: $color_background
+
+// -------------------------------------------------------------------
+// Viewport : tablet & desktop
+// -------------------------------------------------------------------
+
+@media (min-width: $size_tablet)
+
+    .list_navigator
+
+        li
+            display: inline-block
+
+        a:hover
+            color: white
+            background-color: $color_background

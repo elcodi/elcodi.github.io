@@ -1,9 +1,9 @@
 # BACKLOG
 
-- Create media queries to responsive tablet and mobile viewports
+- Convert buttons to links encores
+
+- Resize logo images to avoid empty spaces between images
 
 - Check similar colors and include into sass variables
-
-- Replace dummy text by final copies in all site
 
 - Replace fake images by correct images in showcase section

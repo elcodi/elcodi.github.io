@@ -1,7 +1,5 @@
 # BACKLOG
 
-- Convert buttons to links encores
-
 - Resize logo images to avoid empty spaces between images
 
 - Check similar colors and include into sass variables

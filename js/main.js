@@ -45,7 +45,7 @@ $(document).ready(function() {
             arrows: false,
             infinite: true,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 4000,
             fade: true,
             cssEase: 'linear'
         });

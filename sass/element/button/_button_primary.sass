@@ -7,7 +7,8 @@
 // -------------------------------------------------------------------
 
 $color_text: white
-$color_background: $color_blue_dark
+$color_background: $color_turqclear
+$color_border: darken($color_background, 20)
 
 
 // -------------------------------------------------------------------
@@ -17,14 +18,15 @@ $color_background: $color_blue_dark
 .button_primary
     @extend %button
     width: 100%
+    padding: 1.2em
     font-size: 18px
     color: $color_text
-    padding: 1.2em 2em
     +border-radius(8px)
     font-family: $font_head
     text-transform: uppercase
     background-color: $color_background
-    border-bottom: 1px solid darken($color_background, 10)
+    border-bottom: 2px solid $color_border
+    text-shadow: 1px 1px 1px $color_border
 
     &:hover, &:focus, &:active, &:visited
         color: $color_text
@@ -41,4 +43,3 @@ $color_background: $color_blue_dark
 
     .button_primary
         width: auto
-        font-size: 16px

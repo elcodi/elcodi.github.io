@@ -6,8 +6,8 @@
 // Config
 // -------------------------------------------------------------------
 
-$color_text: white
-$color_background: $color_blue_black
+$color_text: #515151
+$color_background: #191919
 
 
 // -------------------------------------------------------------------
@@ -17,12 +17,18 @@ $color_background: $color_blue_black
 .footer
     +clearfix
     padding: 3em
-    display: none
+    font-size: 18px
+    line-height: 1.5em
+    text-align: center
     color: $color_text
+    font-family: $font_head
     background-color: $color_background
 
-    .brand
-        display: block
+    li
+        margin-bottom: 1.5em
+
+    a:hover
+        color: white
 
 
 // -------------------------------------------------------------------
@@ -32,15 +38,10 @@ $color_background: $color_blue_black
 @media (min-width: $size_tablet)
 
     .footer
-        display: block
+
+        li
+            +grid(4, 2%)
+            margin-bottom: 0
 
         .brand
-            float: left
-            width: 150px
-
-        .list_navigator
-            float: right
-
-            a:hover
-                color: white
-                background-color: transparent
+            max-width: 175px

@@ -8,7 +8,6 @@
     <meta name="keywords" content="Elcodi,Ecommerce,Symfony,Framework">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:700'>
     <link rel="stylesheet" type='text/css' href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="js/libs/slick-carousel/slick/slick.css"/>
 </head>
 <body>
     <header class="header">
@@ -26,17 +25,32 @@
     </header>
     <div class="content">
         <section id="about_us" class="section_green">
-            <div class="about_us">
-                <h2>Welcome to Elcodi!</h2>
-                <h1>Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your project, always taking in account the most advanced patterns in software design and the most pragmatical philosophy.</h1>
-                <h3>Join the community and create something simply incredible.</h3>
-                <a href="#" class="button_primary">See now !</a>
+            <div class="carousel">
+                <div class="item">
+                    <div class="about_us">
+                        <h2>Welcome to Elcodi!</h2>
+                        <h1 class="h3">Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your project</h1>
+                        <a href="#" class="button_primary">Get started !</a>
+                    </div>
+                    <img src="img/carousel/background_1.png" alt="Platform" class="about_image" />
+                </div>
+                <div class="item">
+                    <div class="about_us">
+                        <h2>Craft code</h2>
+                        <h3>Elcodi always takes in account the most advanced patterns in software design and the most pragmatical philosophy</h3>
+                        <a href="#" class="button_primary">Get started !</a>
+                    </div>
+                    <img src="img/carousel/background_2.png" alt="Philosophy" class="about_image" />
+                </div>
+                <div class="item">
+                    <div class="about_us">
+                        <h2>Made for the community</h2>
+                        <h3>Join the community and create something simply incredible</h3>
+                        <a href="#" class="button_primary">Get started !</a>
+                    </div>
+                    <img src="img/carousel/background_3.png" alt="Community" class="about_image" />
+                </div>
             </div>
-            <ul class="carousel">
-                <li><img src="img/carousel/background_1.png" alt="Background"></li>
-                <li><img src="img/carousel/background_2.png" alt="Background"></li>
-                <li><img src="img/carousel/background_3.png" alt="Background"></li>
-            </ul>
         </section>
         <section id="stats" class="section_blue">
             <ul class="list_3columns">
@@ -175,16 +189,17 @@
             </ul>
         </section>
         <footer class="footer">
-            <a href="#" class="brand">
-                <img src="img/elcodi.png" alt="The Symfony platform to build and quickly scale your ecommerce" />
-            </a>
-            <ul class="list_navigator">
-                <li><a href="#get_started">Get started!</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#social">Docs</a></li>
-                <li><a href="#social">Blogs</a></li>
-                <li><a href="#social">Support</a></li>
+            <ul>
+                <li><img src="img/elcodi.png" alt="The Symfony platform to build and quickly scale your ecommerce" class="brand" /></li>
+                <li>
+                    <p>Copyright © 2015 Elcodi</p>
+                    <p>All right reserved</p>
+                </li>
+                <li>
+                    <p>tech@elcodi.com</p>
+                    <p>+34 600 000 000</p>
+                </li>
+                <li><a href="https://twitter.com/Elcodi_dev">@Elcodi_dev</a></li>
             </ul>
         </footer>
     </div>

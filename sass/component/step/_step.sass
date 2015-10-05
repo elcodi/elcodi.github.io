@@ -15,7 +15,6 @@ $color_background: white
 // -------------------------------------------------------------------
 
 .step
-    padding: 0 2em
 
     h3
         font-size: 24px
@@ -25,18 +24,21 @@ $color_background: white
         text-transform: uppercase
 
     img
-        max-width: 250px
-        margin-bottom: 1em
+        padding: 2em
+        +box-sizing(border-box)
 
     span
         line-height: 1.5em
 
 
 // -------------------------------------------------------------------
-// Viewport : tablet & desktop
+// Viewport : desktop
 // -------------------------------------------------------------------
 
-@media (min-width: $size_tablet)
+@media (min-width: $size_desktop)
 
-    .step a:hover
-        opacity: 0.6
+    .step
+        padding: 0 2em
+
+        a:hover
+            opacity: 0.6

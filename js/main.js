@@ -36,11 +36,28 @@ $(document).ready(function() {
     }
 
     /*
+     * Initialize carousel library
+     * https://github.com/kenwheeler/slick/
+     */
+    function initCarousel() {
+
+        return $('.carousel').slick({
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            fade: true,
+            cssEase: 'linear'
+        });
+    }
+
+    /*
      * List of methods to initialize web app
      */
     function initWebsite() {
 
         clickLink();
+        initCarousel();
     }
 
     initWebsite();

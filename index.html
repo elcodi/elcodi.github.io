@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Elcodi - Symfony E-commerce Platform</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your e-commerce project.">
+    <meta name="description" content="Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your e-commerce project">
     <meta name="keywords" content="Elcodi,Ecommerce,Symfony,Framework">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:700'>
     <link rel="stylesheet" type='text/css' href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="js/libs/slick-carousel/slick/slick.css"/>
 </head>
 <body>
     <header class="header">
@@ -24,13 +25,18 @@
         </ul>
     </header>
     <div class="content">
-        <section id="about_us" class="section_green lanscape">
+        <section id="about_us" class="section_green">
             <div class="about_us">
                 <h2>Welcome to Elcodi!</h2>
                 <h1>Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your project, always taking in account the most advanced patterns in software design and the most pragmatical philosophy.</h1>
                 <h3>Join the community and create something simply incredible.</h3>
                 <a href="#" class="button_primary">See now !</a>
             </div>
+            <ul class="carousel">
+                <li><img src="img/carousel/background_1.png" alt="Background"></li>
+                <li><img src="img/carousel/background_2.png" alt="Background"></li>
+                <li><img src="img/carousel/background_3.png" alt="Background"></li>
+            </ul>
         </section>
         <section id="stats" class="section_blue">
             <ul class="list_3columns">
@@ -182,7 +188,8 @@
             </ul>
         </footer>
     </div>
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/slick-carousel/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

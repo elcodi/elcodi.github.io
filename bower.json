@@ -1,0 +1,29 @@
+{
+  "name": "elcodi/website",
+  "version": "0.0.1",
+  "homepage": "https://github.com/elcodi/website",
+  "authors": [
+    "Miguel Ángel Ríos <ro.miguelangel@gmail.com>"
+  ],
+  "description": "Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your e-commerce project",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "elcodi",
+    "ecommerce",
+    "symfony"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "slick-carousel": "kenwheeler/slick#~1.5.8"
+  }
+}

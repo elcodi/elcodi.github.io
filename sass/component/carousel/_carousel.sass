@@ -3,10 +3,19 @@
 // ===================================================================
 
 // -------------------------------------------------------------------
-// Viewport : mobile
+// Config
+// -------------------------------------------------------------------
+
+$color_active: $color_blue_dark
+
+
+// -------------------------------------------------------------------
+// Viewport : all
 // -------------------------------------------------------------------
 
 .carousel
+    +clearfix
+    position: relative
 
     h2, .h2
         font-size: 36px
@@ -17,3 +26,28 @@
     .item
         float: left
         display: block
+
+
+.slick-dots
+    display: block
+
+    li
+        margin: 0 0.5em
+        cursor: pointer
+        display: inline-block
+        +border-radius(100%)
+
+        button
+            font-size: 0
+            line-height: 0
+            display: block
+            padding: 7px
+            cursor: pointer
+            border: 0
+            outline: none
+            +border-radius(100%)
+            background-color: white
+
+
+        &.slick-active button
+            background-color: $color_active

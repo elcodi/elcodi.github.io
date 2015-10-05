@@ -42,6 +42,7 @@ $(document).ready(function() {
     function initCarousel() {
 
         return $('.carousel').slick({
+            dots: true,
             arrows: false,
             infinite: true,
             autoplay: true,

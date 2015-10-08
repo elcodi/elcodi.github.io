@@ -17,17 +17,33 @@ $color_head: $color_green_light
 
 .card
     padding: 1em
+    position: relative
     text-align: center
     +border-radius(10px)
     background-color: white
 
     h4
         color: $color_head
-        margin-bottom: 40px
+        margin: 65px 0 40px
         text-transform: uppercase
+
+    img
+        width: 100px
+        +position(absolute, top, -65px, left, calc(50% - 50px))
 
     .code:last-child
         margin-bottom: 0
+
+
+    &.simple .code_content
+
+        > span
+            color: #777
+            text-align: center
+            font-family: $font_head
+
+            strong
+                color: $color_green_light
 
 
 .code
@@ -35,11 +51,15 @@ $color_head: $color_green_light
 
     .code_title
         padding: 1em
-        color: white
-        font-family: $font_head
         background-color: $color_head
         +border-radius-side(4px, top, left)
         +border-radius-side(4px, top, right)
+
+        h5
+            color: white
+            font-size: 16px
+            line-height: 1.2em
+            font-family: $font_head
 
     .code_content
         padding: 1em
@@ -49,8 +69,31 @@ $color_head: $color_green_light
 
         span
             display: block
-            font-size: 12px
+            font-size: 14px
             text-align: left
             line-height: 1.5em
             margin-bottom: 0.4em
             font-family: $font_code
+
+    .code_info
+        text-align: center
+        margin-bottom: 2em
+
+        h6
+            color: #777
+            text-transform: uppercase
+
+        p
+            color: #777
+            font-family: $font_head
+
+        strong
+            color: $color_head
+
+
+        &:last-child
+            margin-bottom: 0.8em
+
+
+.button_group
+    text-align: center

@@ -23,9 +23,9 @@ $(document).ready(function() {
      */
     function clickLink() {
 
-        var $headerLinks = $('.list_navigator').find('a');
+        var $link = $('.toSection');
 
-        $headerLinks.on('click', function (e) {
+        $link.on('click', function (e) {
             e.preventDefault();
 
             var linkId = $(this).attr('href'),

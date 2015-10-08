@@ -33,33 +33,36 @@ $color_background: $color_green_light
     .section_description
         text-align: left
         color: $color_text
+        margin-bottom: 2em
 
-
-    // carousel
 
     .about_title
         @extend .h1
+        margin-bottom: 0.5em
 
 
 // -------------------------------------------------------------------
-// Viewport : desktop
+// Viewport : tablet & desktop
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
 
     .section_green
         padding-top: 150px
-        position: relative
 
         .about_us
             +clearfix
             width: 35%
             float: left
 
-        .button_primary
-            +position(absolute, bottom, 0, left, 0)
-
         .about_image
             +clearfix
             width: 50%
             float: right
+
+        .about_title
+            margin-bottom: 1em
+
+
+        .button_primary
+            +position(absolute, bottom, 0, left, 0)

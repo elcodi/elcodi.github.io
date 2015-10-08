@@ -22,6 +22,7 @@ $color_border: darken($color_background, 20)
     padding-top: 8px
     color: $color_text
     +border-radius(100%)
+    display: none !important
     background-color: $color_background
 
     &:hover, &:focus, &:active, &:visited
@@ -36,3 +37,15 @@ $color_border: darken($color_background, 20)
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
+
+    .button_arrow
+        display: inline-block !important
+
+        &.prev
+            padding-left: 32px
+            +position(absolute, top, 55%, left, -50px)
+
+        &.next
+            padding-right: 32px
+            +position(absolute, top, 55%, right, -50px)
+

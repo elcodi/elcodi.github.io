@@ -10,7 +10,7 @@ $color_active: $color_blue_dark
 
 
 // -------------------------------------------------------------------
-// Viewport : all
+// Viewport : mobile
 // -------------------------------------------------------------------
 
 .carousel
@@ -28,14 +28,8 @@ $color_active: $color_blue_dark
         letter-spacing: -2px
         font-family: $font_base
 
-
-.slick-list
-    +clearfix
-    margin-bottom: 65px
-
-
-.slick-arrow
-    @extend .button_arrow
+    .button_primary
+        margin-bottom: 2em
 
 
 .slick-slide
@@ -44,12 +38,11 @@ $color_active: $color_blue_dark
         outline: none
 
 
-.button_arrow
+// -------------------------------------------------------------------
+// Viewport : tablet & desktop
+// -------------------------------------------------------------------
 
-    &.prev
-        padding-left: 32px
-        +position(absolute, top, 40%, left, -50px)
+@media (min-width: $size_tablet)
 
-    &.next
-        padding-right: 32px
-        +position(absolute, top, 40%, right, -50px)
+    .carousel .button_primary
+        margin-bottom: 0

@@ -30,14 +30,20 @@ $color_background: $color_gray_light
 
     .section_list
         +clearfix
-        margin-bottom: 30px
+
+        li
+            margin-bottom: 6em
+
+            &:last-child
+                margin-bottom: 2em
 
 
 // -------------------------------------------------------------------
-// Viewport : desktop
+// Viewport : tablet & desktop
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
 
-    .section_list > li
+    .section_gray .section_list > li
         +grid(2, 2%)
+        margin-bottom: 30px

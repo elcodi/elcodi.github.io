@@ -42,11 +42,11 @@ $(document).ready(function() {
     function initCarousel() {
 
         return $('.carousel').slick({
-            dots: true,
-            arrows: false,
             infinite: true,
             autoplay: true,
-            autoplaySpeed: 4000
+            autoplaySpeed: 4000,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
         });
     }
 

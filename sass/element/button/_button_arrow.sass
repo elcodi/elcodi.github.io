@@ -1,47 +1,38 @@
 // ===================================================================
-/* HEADER
+/* BUTTON ARROW
 // ===================================================================
 
 // -------------------------------------------------------------------
 // Config
 // -------------------------------------------------------------------
 
-$color_background: white
+$color_text: white
+$color_background: $color_turqclear
+$color_border: darken($color_background, 20)
 
 
 // -------------------------------------------------------------------
 // Viewport : mobile
 // -------------------------------------------------------------------
 
-.header
-    +clearfix
+.button_arrow
+    @extend %button
+    +size(100px)
+    font-size: 28px
+    padding-top: 8px
+    color: $color_text
+    +border-radius(100%)
     background-color: $color_background
 
-    .brand
-        width: 80%
-        display: block
-        margin: 1.5em auto
+    &:hover, &:focus, &:active, &:visited
+        color: $color_text
+
+    &:hover
+        background-color: lighten($color_background, 10)
 
 
 // -------------------------------------------------------------------
-// Viewport : desktop
+// Viewport : tablet & desktop
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
-
-    .header
-        width: 100%
-        padding: 50px 0
-        padding-bottom: 25px
-        +position(fixed, top, 0, left, 0, 1000)
-
-        .brand
-            margin: 0
-            float: left
-            width: 300px
-
-        .list_navigator
-            +position(absolute, bottom, 0, right, 0)
-
-        .content
-            position: relative

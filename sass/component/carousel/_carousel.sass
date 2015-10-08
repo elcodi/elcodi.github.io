@@ -16,7 +16,6 @@ $color_active: $color_blue_dark
 .carousel
     +clearfix
     overflow: hidden
-    position: relative
 
     .item
         float: left
@@ -30,35 +29,27 @@ $color_active: $color_blue_dark
         font-family: $font_base
 
 
+.slick-list
+    +clearfix
+    margin-bottom: 65px
+
+
+.slick-arrow
+    @extend .button_arrow
+
+
 .slick-slide
 
     &:hover, &:focus, &:active, &:visited
         outline: none
 
 
-.slick-list
-    +clearfix
-    margin-bottom: 65px
+.button_arrow
 
+    &.prev
+        padding-left: 32px
+        +position(absolute, top, 40%, left, -50px)
 
-.slick-dots
-    text-align: center
-
-    li
-        margin: 0 0.5em
-        cursor: pointer
-        display: inline-block
-
-        button
-            font-size: 0
-            line-height: 0
-            display: block
-            padding: 7px
-            cursor: pointer
-            border: 0
-            outline: none
-            background-color: white
-
-
-        &.slick-active button
-            background-color: $color_active
+    &.next
+        padding-right: 32px
+        +position(absolute, top, 40%, right, -50px)

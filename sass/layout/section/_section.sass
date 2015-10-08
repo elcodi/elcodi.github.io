@@ -3,34 +3,45 @@
 // ===================================================================
 
 // -------------------------------------------------------------------
-// Viewport : mobile
+// Viewport : all
 // -------------------------------------------------------------------
 
 %section
     +clearfix
     padding: 2em
-    text-align: center
     +box-sizing(border-box)
 
-    h2
+    .section_title
+        @extend .h3
+        text-align: center
+        margin-bottom: 20px
         text-transform: uppercase
 
+    .section_separation
+        text-align: center
+        margin-bottom: 30px
 
-// -------------------------------------------------------------------
-// Viewport : tablet
-// -------------------------------------------------------------------
+        > i
+            +size(10px)
+            margin-right: 10px
+            display: inline-block
+    
+            &:last-child
+                margin-right: 0
 
-@media (min-width: $size_tablet)
-
-    %section
-        padding: 3em
+    .section_description
+        font-size: 18px
+        text-align: center
+        margin-bottom: 75px
+        letter-spacing: -0.5px
+        font-family: $font_base
 
 
 // -------------------------------------------------------------------
 // Viewport : desktop
 // -------------------------------------------------------------------
 
-@media (min-width: $size_desktop)
+@media (min-width: $size_tablet)
 
     %section
-        padding: 5em
+        padding: 150px 0

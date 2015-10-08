@@ -11,12 +11,6 @@
     +clearfix
     margin-bottom: 4em
 
-    .image
-        margin-bottom: 2em
-
-    .content p
-        margin-bottom: 2em
-
 
 // -------------------------------------------------------------------
 // Viewport : tablet & desktop
@@ -26,6 +20,15 @@
 
     .demo_admin,
     .demo_ecommerce
+        margin-bottom: 0
 
-        > div
-            +grid(2, 4%)
+        .demo_image
+            float: left
+            width: 55%
+
+        .demo_description
+            float: right
+            width: 40%
+
+    .demo_ecommerce
+        margin-bottom: 100px

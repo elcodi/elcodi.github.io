@@ -11,32 +11,34 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="brand">
-            <img src="img/elcodi.png" alt="Elcodi brand logo" />
-        </a>
-        <ul class="list_navigator">
-            <li><a href="#get_started">Get started!</a></li>
-            <li><a href="#demo">Demo</a></li>
-            <li><a href="#showcase">Showcase</a></li>
-            <li><a href="#social">Docs</a></li>
-            <li><a href="#social">Blogs</a></li>
-            <li><a href="#social">Support</a></li>
-        </ul>
+        <div class="content">
+            <a href="#" class="brand">
+                <img src="img/elcodi.png" alt="Elcodi brand logo" />
+            </a>
+            <ul class="list_navigator">
+                <li><a href="#get_started">Get started!</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#social">Docs</a></li>
+                <li><a href="#social">Blogs</a></li>
+                <li><a href="#social">Support</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="content">
-        <section id="about_us" class="section_green">
+    <section id="about_us" class="section_green">
+        <div class="content">
             <div class="carousel">
                 <div class="item">
                     <div class="about_us">
-                        <h2>Welcome to Elcodi!</h2>
-                        <h1 class="h3">Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your project</h1>
+                        <h2 class="about_title">Welcome to Elcodi!</h2>
+                        <h1>Elcodi is an E-commerce platform on top of Symfony, specifically created to build and quickly scale your project</h1>
                         <a href="#" class="button_primary">Get started !</a>
                     </div>
                     <img src="img/carousel/background_1.png" alt="Platform" class="about_image" />
                 </div>
                 <div class="item">
                     <div class="about_us">
-                        <h2>Craft code</h2>
+                        <h2 class="about_title">Craft code</h2>
                         <h3>Elcodi always takes in account the most advanced patterns in software design and the most pragmatical philosophy</h3>
                         <a href="#" class="button_primary">Get started !</a>
                     </div>
@@ -44,15 +46,16 @@
                 </div>
                 <div class="item">
                     <div class="about_us">
-                        <h2>Made for the community</h2>
+                        <h2 class="about_title">Made for the community</h2>
                         <h3>Join the community and create something simply incredible</h3>
                         <a href="#" class="button_primary">Get started !</a>
                     </div>
                     <img src="img/carousel/background_3.png" alt="Community" class="about_image" />
                 </div>
             </div>
-        </section>
-        <section id="stats" class="section_blue">
+    </section>
+    <section id="stats" class="section_blue">
+        <div class="content">
             <ul class="list_3columns">
                 <li>
                     <div class="step">
@@ -73,9 +76,12 @@
                     </div>
                 </li>
             </ul>
-        </section>
-        <section id="trust_us" class="section_dark">
-            <h2>They trust us!<br />...</h2>
+        </div>
+    </section>
+    <section id="trust_us" class="section_dark">
+        <div class="content">
+            <h2 class="section_title">They trust us!</h2>
+            <div class="section_separation"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
             <ul class="list_5columns">
                 <li><img src="img/trust_us/logo_shopery.png" alt="Shopery" /></li>
                 <li><img src="img/trust_us/logo_mascoteros.png" alt="Mascoteros" /></li>
@@ -83,89 +89,107 @@
                 <li><img src="img/trust_us/logo_barcelona_smartmoving.png" alt="Barcelona Smart Moving" /></li>
                 <li><img src="img/trust_us/logo_deliberry.png" alt="Deliberry" /></li>
             </ul>
-        </section>
-        <section id="showcase" class="section_white">
-            <h2>Showcase<br />...</h2>
-            <h3>Here you can see our current projects</h3>
+        </div>
+    </section>
+    <section id="showcase" class="section_white">
+        <div class="content">
+            <h2 class="section_title">Showcase</h2>
+            <div class="section_separation"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+            <h3 class="section_description">Here you can see our current projects</h3>
             <ul class="list_3columns">
                 <li><img src="img/showcase/shopery.jpg" alt="Shopery project" /></li>
                 <li><img src="img/showcase/deliberry.jpg" alt="Deliberry project" /></li>
                 <li><img src="img/showcase/bamboo.jpg" alt="Bamboo project" /></li>
             </ul>
-        </section>
-        <section id="get_started" class="section_gray">
-            <h2>Get started!<br />...</h2>
-            <h3>Install Elcodi in your localhost in less than 3 minutes</h3>
-            <ul class="list_3columns">
+        </div>
+    </section>
+    <section id="get_started" class="section_gray">
+        <div class="content">
+            <h2 class="section_title">Get started!</h2>
+            <div class="section_separation"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+            <h3 class="section_description">Install Elcodi in your localhost in less than 3 minutes</h3>
+            <ul class="section_list">
                 <li>
                     <div class="card">
-                        <span class="number">1</span>
-                        <h4 class="h2">Install the project</h4>
-                        <p>Use create-project command to install the project and choose a name and country to begin!</p>
+                        <h4>Install the project</h4>
                         <div class="code">
-                            <span>$ php composer.phar create-project elcodi/bamboo bamboo-dev</span>
-                            <span>$ cd bamboo/</span>
-                            <span>$ php app/console elcodi:install</span>
+                            <div class="code_title">
+                                <h5>Use create-project command to install the project and choose a name and country to begin!</h5>
+                            </div>
+                            <div class="code_content">
+                                <span>$ php composer.phar create-project elcodi/bamboo bamboo-dev</span>
+                                <span>$ cd bamboo/</span>
+                                <span>$ php app/console elcodi:install</span>
+                            </div>
+                        </div>
+                        <div class="code">
+                            <div class="code_title">
+                                <h5>Our store is ready to run. Use the built-in server to take a look at the project</h5>
+                            </div>
+                            <div class="code_content">
+                                <span>$ php app/console server:run</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="card">
-                        <span class="number">2</span>
-                        <h4 class="h2">Run the server</h4>
-                        <p>Our store is ready to run. Use the built-in server to take a look at the project</p>
+                        <h4>Visit your store</h4>
                         <div class="code">
-                            <span>$ php app/console server:run</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <span class="number">3</span>
-                        <h4 class="h2">Visit your store</h4>
-                        <p>You are done! Visit http://localhost:8000 in your browser and take a look at what we have for you :)</p>
-                        <div class="code">
-                            <span>Use these Customer credentials in the store:</span>
-                            <span>Customer username: customer@customer.com</span>
-                            <span>Customer password: 1234</span>
-                            <span>And for the admin panel, use this Admin credentials.</span>
-                            <span>Admin username: admin@admin.com</span>
-                            <span>Admin password: 1234</span>
+                            <div class="code_title">
+                                <h5>You are done! Visit http://localhost:8000 in your browser and take a look at what we have for you :)</h5>
+                            </div>
+                            <div class="code_content">
+                                <span>Use these Customer credentials in the store:</span>
+                                <span>Customer username: customer@customer.com</span>
+                                <span>Customer password: 1234</span>
+                                <span>And for the admin panel, use this Admin credentials.</span>
+                                <span>Admin username: admin@admin.com</span>
+                                <span>Admin password: 1234</span>
+                            </div>
                         </div>
                     </div>
                 </li>
             </ul>
-            <a href="#" class="button_primary">Install now !</a>
-        </section>
-        <section id="demo" class="section_green">
+            <div class="button_group">
+                <a href="#" class="button_primary">View docs</a>
+            </div>
+        </div>
+    </section>
+    <section id="demo" class="section_green">
+        <div class="content">
             <div class="demo_ecommerce">
-                <div class="image">
+                <div class="demo_image">
                     <img src="img/demo/demo_1.png" alt="Ecommerce" />
                 </div>
-                <div class="content">
-                    <h2>Demo e-commerce<br />...</h2>
-                    <p>Once installed Elcodi in your localhost, you will be able to checkout your new E-commerce!</p>
-                    <a href="#" class="button_primary">See now !</a>
+                <div class="demo_description">
+                    <h2 class="section_title">Demo e-commerce</h2>
+                    <div class="section_separation"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+                    <p class="section_description">Once installed Elcodi in your localhost, you will be able to checkout your new E-commerce!</p>
+                    <a href="#" class="button_primary">View demo</a>
                 </div>
             </div>
             <div class="demo_admin">
-                <div class="image">
+                <div class="demo_image">
                     <img src="img/demo/demo_2.png" alt="Dashboard" />
                 </div>
-                <div class="content">
-                    <h2>Admin panel<br />...</h2>
-                    <p>And of course, you will be able as well to manage all your amazing data using the admin panel. Checkout all things you can do!</p>
-                    <a href="#" class="button_primary">See now !</a>
+                <div class="demo_description">
+                    <h2 class="section_title">Admin panel</h2>
+                    <div class="section_separation"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+                    <p class="section_description">And of course, you will be able as well to manage all your amazing data using the admin panel. Checkout all things you can do!</p>
+                    <a href="#" class="button_primary">View demo</a>
                 </div>
             </div>
-        </section>
-        <section id="social" class="section_blue">
+        </div>
+    </section>
+    <section id="social" class="section_blue">
+        <div class="content">
             <ul class="list_3columns">
                 <li>
                     <div class="step">
                         <a href="http://blog.elcodi.io/" target="_blank">
                             <img src="img/social/blog.png" alt="Read the documentation" />
-                            <h3 class="h2">Blog</h3>
+                            <h3 class="section_link">Blog</h3>
                             <p>Elcodi Core team is creating new cool code and architecture day by day. If you want to stay tunned about new components, new features or you simply want to read some nice posts, then you have to follow this blog</p>
                         </a>
                     </div>
@@ -174,7 +198,7 @@
                     <div class="step">
                         <a href="https://gitter.im/elcodi/elcodi" target="_blank">
                             <img src="img/social/gitter.png" alt="Chat with ElCodi Team" />
-                            <h3 class="h2">Gitter</h3>
+                            <h3 class="section_link">Gitter</h3>
                             <p>Elcodi is mainly a superb community. If you want to join them all, share your experience with Elcodi, ask some questions or simply give your point of view and feedback, then you have to join us on Gitter. We are waiting for you!</p>
                         </a>
                     </div>
@@ -182,15 +206,17 @@
                 <li>
                     <div class="step">
                         <img src="img/social/email.png" alt="Contact with ElCodi Team" />
-                        <h3 class="h2">Contact</h3>
+                        <h3 class="section_link">Contact</h3>
                         <p>Send us an email if you need our help. We will be happy to help you as much as we can <a href="mailto:tech@elcodi.com">tech@elcodi.com</a></p>
                     </div>
                 </li>
             </ul>
-        </section>
-        <footer class="footer">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content">
             <ul>
-                <li><img src="img/elcodi.png" alt="The Symfony platform to build and quickly scale your ecommerce" class="brand" /></li>
+                <li><img src="img/elcodi_gray.png" alt="The Symfony platform to build and quickly scale your ecommerce" class="brand" /></li>
                 <li>
                     <p>Copyright © 2015 Elcodi</p>
                     <p>All right reserved</p>
@@ -201,8 +227,8 @@
                 </li>
                 <li><a href="https://twitter.com/Elcodi_dev">@Elcodi_dev</a></li>
             </ul>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="js/libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/libs/slick-carousel/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

@@ -15,7 +15,7 @@ $(document).ready(function() {
      */
     function smoothScroll(target) {
 
-        return $('html, body').animate({ scrollTop: target }, 500);
+        return $('html, body').animate({ scrollTop: target - 155 }, 500);
     }
 
     /*
@@ -46,9 +46,7 @@ $(document).ready(function() {
             arrows: false,
             infinite: true,
             autoplay: true,
-            autoplaySpeed: 4000,
-            fade: true,
-            cssEase: 'linear'
+            autoplaySpeed: 4000
         });
     }
 

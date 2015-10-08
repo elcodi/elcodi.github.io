@@ -15,20 +15,19 @@ $color_background: white
 // -------------------------------------------------------------------
 
 .step
+    padding: 0 30px
+    padding-bottom: 0
+    text-align: center
 
     h3
-        font-size: 24px
+        margin-bottom: 0
         text-align: center
-        color: $color_text
-        font-family: $font_head
         text-transform: uppercase
 
     img
-        padding: 2em
+        padding: 0 30px
+        margin-bottom: 30px
         +box-sizing(border-box)
-
-    span
-        line-height: 1.5em
 
 
 // -------------------------------------------------------------------
@@ -38,7 +37,6 @@ $color_background: white
 @media (min-width: $size_desktop)
 
     .step
-        padding: 0 2em
 
         a:hover
             opacity: 0.6

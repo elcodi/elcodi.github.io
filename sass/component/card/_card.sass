@@ -6,11 +6,9 @@
 // Config
 // -------------------------------------------------------------------
 
-$size_number: 36px
 $color_background: white
 $color_text: $color_gray_dark
 $color_head: $color_green_light
-$color_number: $color_turquoise
 
 
 // -------------------------------------------------------------------
@@ -18,45 +16,41 @@ $color_number: $color_turquoise
 // -------------------------------------------------------------------
 
 .card
-    +clearfix
     padding: 1em
     text-align: center
     +border-radius(10px)
     background-color: white
 
-    > h4
-        font-size: 18px
+    h4
         color: $color_head
-        margin-bottom: 8px
+        margin-bottom: 40px
         text-transform: uppercase
 
-    > p
-        font-size: 14px
-        color: $color_text
-        margin-bottom: 2em
+    .code:last-child
+        margin-bottom: 0
 
-    .number
-        color: white
-        display: block
-        margin: 1em auto
-        text-align: center
-        +size($size_number)
-        +border-radius(100%)
-        font-family: $font_head
-        line-height: $size_number
-        font-size: $size_number / 2
-        background-color: $color_number
 
-    .code
+.code
+    margin-bottom: 1em
+
+    .code_title
         padding: 1em
-        text-align: left
-        min-height: 120px
-        +border-radius(4px)
-        font-family: $font_code
+        color: white
+        font-family: $font_head
+        background-color: $color_head
+        +border-radius-side(4px, top, left)
+        +border-radius-side(4px, top, right)
+
+    .code_content
+        padding: 1em
         background-color: $color_gray_light
+        +border-radius-side(4px, bottom, left)
+        +border-radius-side(4px, bottom, right)
 
         span
             display: block
-            font-size: 10px
+            font-size: 12px
+            text-align: left
             line-height: 1.5em
             margin-bottom: 0.4em
+            font-family: $font_code

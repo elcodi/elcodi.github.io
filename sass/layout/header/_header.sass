@@ -7,7 +7,6 @@
 // -------------------------------------------------------------------
 
 $color_background: white
-$color_text: $color_gray_dark
 
 
 // -------------------------------------------------------------------
@@ -16,29 +15,29 @@ $color_text: $color_gray_dark
 
 .header
     +clearfix
-    padding: 2em 4em
-    color: $color_text
-    text-align: center
     background-color: $color_background
 
     .brand
         width: 80%
         display: block
-        margin: 0 auto 2em
+        margin: 1.5em auto
 
 
 // -------------------------------------------------------------------
-// Viewport : tablet & desktop
+// Viewport : desktop
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
 
     .header
+        width: 100%
+        padding: 50px 0
+        padding-bottom: 25px
+        +position(fixed, top, 0, left, 0, 1000)
 
         .brand
             float: left
             width: 300px
 
         .list_navigator
-            float: right
-            margin-top: 2.5em
+            +position(absolute, bottom, 0, right, 0)

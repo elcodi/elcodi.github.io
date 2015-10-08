@@ -7,7 +7,8 @@
 // -------------------------------------------------------------------
 
 $color_text: white
-$color_background: $color_turquoise
+$color_head: white
+$color_background: $color_green_light
 
 
 // -------------------------------------------------------------------
@@ -19,25 +20,45 @@ $color_background: $color_turquoise
     color: $color_text
     background-color: $color_background
 
-    .about_us,
-    .about_image
-        margin-bottom: 2em
+    .section_title
+        text-align: left
+        color: $color_head
+
+    .section_separation
+        text-align: left
+
+        > i
+            background-color: $color_head
+
+    .section_description
+        text-align: left
+        color: $color_text
+
+
+    // carousel
+
+    .about_title
+        @extend .h1
 
 
 // -------------------------------------------------------------------
-// Viewport : tablet & desktop
+// Viewport : desktop
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
 
     .section_green
-        text-align: left
+        padding-top: 150px
 
         .about_us
-            width: 45%
+            +clearfix
+            width: 35%
             float: left
-            margin-right: 5%
+
+        .button_primary
+            +position(absolute, bottom, 0, left, 0)
 
         .about_image
-            width: 45%
+            +clearfix
+            width: 50%
             float: right

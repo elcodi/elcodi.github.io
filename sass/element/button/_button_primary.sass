@@ -18,15 +18,15 @@ $color_border: darken($color_background, 20)
 .button_primary
     @extend %button
     width: 100%
-    padding: 1.2em
-    font-size: 18px
+    font-size: 22px
+    line-height: 19px
+    padding: 0.8em 1.2em
+    letter-spacing: -1px
     color: $color_text
     +border-radius(4px)
     font-family: $font_head
     text-transform: uppercase
     background-color: $color_background
-    border-bottom: 2px solid $color_border
-    text-shadow: 1px 1px 1px $color_border
 
     &:hover, &:focus, &:active, &:visited
         color: $color_text

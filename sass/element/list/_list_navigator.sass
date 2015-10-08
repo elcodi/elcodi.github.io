@@ -16,16 +16,18 @@ $color_background: $color_turquoise
 
 .list_navigator
     +clearfix
+    display: none
 
     li
         display: block
 
     a
+        @extend .h5
+        padding: 12px
         display: block
+        margin-bottom: 0
         color: $color_text
-        padding: 0.9em 1em
         text-decoration: none
-        font-family: $font_head
         text-transform: uppercase
 
 
@@ -36,6 +38,7 @@ $color_background: $color_turquoise
 @media (min-width: $size_tablet)
 
     .list_navigator
+        display: block
 
         li
             display: inline-block

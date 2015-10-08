@@ -17,24 +17,25 @@ $color_background: #191919
 .footer
     +clearfix
     padding: 2em
-    font-size: 18px
-    line-height: 1.5em
     text-align: center
     color: $color_text
-    font-family: $font_head
     background-color: $color_background
 
     li
         margin-bottom: 1.5em
 
+    p, a
+        font-family: $font_head
+
 
 // -------------------------------------------------------------------
-// Viewport : tablet & desktop
+// Viewport : desktop
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
 
     .footer
+        text-align: left
 
         li
             +grid(4, 2%)

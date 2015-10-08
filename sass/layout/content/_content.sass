@@ -1,30 +1,23 @@
 // ===================================================================
-/* SECTION WHITE
+/* CONTENT
 // ===================================================================
-
-// -------------------------------------------------------------------
-// Config
-// -------------------------------------------------------------------
-
-$color_background: white
-$color_text: $color_gray_dark
-$color_head: $color_green_light
-
 
 // -------------------------------------------------------------------
 // Viewport : all
 // -------------------------------------------------------------------
 
-.section_white
-    @extend %section
-    color: $color_text
-    background-color: $color_background
+.content
+    +clearfix
+    width: 100%
+    margin: 0 auto
 
-    .section_title
-        color: $color_head
 
-    .section_separation > i
-        background-color: $color_head
+// -------------------------------------------------------------------
+// Viewport : desktop
+// -------------------------------------------------------------------
 
-    .section_description
-        color: $color_text
+@media (min-width: $size_tablet)
+
+    .content
+        width: 80%
+        position: relative

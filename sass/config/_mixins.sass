@@ -61,6 +61,11 @@
     -moz-border-radius: $radius
     border-radius: $radius
 
+=border-radius-side($radius, $vertical, $horizontal)
+    -webkit-border-#{$vertical}-#{$horizontal}-radius: $radius
+    -moz-border-#{$vertical}-#{$horizontal}-radius: $radius
+    border-#{$vertical}-#{$horizontal}-radius: $radius
+
 =box-sizing($boxmodel)
     -webkit-box-sizing: $boxmodel
     -moz-box-sizing: $boxmodel

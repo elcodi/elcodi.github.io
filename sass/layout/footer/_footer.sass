@@ -29,13 +29,13 @@ $color_background: #191919
 
 
 // -------------------------------------------------------------------
-// Viewport : desktop
+// Viewport : tablet & desktop
 // -------------------------------------------------------------------
 
 @media (min-width: $size_tablet)
 
     .footer
-        text-align: left
+        text-align: center
 
         li
             +grid(4, 2%)
@@ -43,3 +43,9 @@ $color_background: #191919
 
         .brand
             max-width: 175px
+
+        .twitter
+            font-size: 48px
+
+            &:hover > i
+                color: white

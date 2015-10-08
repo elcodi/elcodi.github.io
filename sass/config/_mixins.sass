@@ -76,6 +76,9 @@
 // Effects
 // -------------------------------------------------------------------
 
+=opacity($opacity)
+    opacity: $opacity / 100
+
 =transition($transition)
     -webkit-transition: $transition
     -moz-transition: $transition
@@ -92,9 +95,6 @@
     -webkit-box-shadow: $shadow
     -moz-box-shadow: $shadow
     box-shadow: $shadow
-
-=opacity($opacity)
-    opacity: $opacity / 100
 
 =background-gradient($color_from, $color_to)
     background: -moz-linear-gradient(top, $color_from 0%, $color_to 100%)

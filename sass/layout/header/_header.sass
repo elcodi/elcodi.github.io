@@ -33,6 +33,7 @@ $color_background: white
         width: 100%
         padding: 50px 0
         padding-bottom: 25px
+        +transition(all 0.5s)
         +position(fixed, top, 0, left, 0, 1000)
 
         .brand
@@ -43,3 +44,14 @@ $color_background: white
         .list_navigator
             float: right
             margin-top: 44px
+
+
+        &.collapse
+            padding: 0
+
+            .brand
+                width: 150px
+                margin: 1em 0
+
+            .list_navigator
+                margin: 1.2em 0 0

@@ -15,7 +15,23 @@ $(document).ready(function() {
      */
     function smoothScroll(target) {
 
-        return $('html, body').animate({ scrollTop: target - 155 }, 500);
+        return $('html, body').animate({ scrollTop: target - 72 }, 500);
+    }
+
+    /*
+     * Reduce header height and all its elements
+     */
+    function collapseHeader() {
+
+        return $('.header').removeClass('collapse');
+    }
+
+    /*
+     * Restore header height and all its elements
+     */
+    function restoreHeader() {
+
+        return $('.header').addClass('collapse');
     }
 
     /*
@@ -32,6 +48,20 @@ $(document).ready(function() {
                 target = getTarget(linkId);
 
             smoothScroll(target);
+        });
+    }
+
+    /*
+     * Actions from scroll page event
+     */
+    function scrollPage() {
+
+        var collapse = false,
+            headerHeight = $('.header').height();
+
+        $(window).on('scroll', function () {
+
+            $(window).scrollTop() < headerHeight ? collapseHeader() : restoreHeader();
         });
     }
 
@@ -55,6 +85,7 @@ $(document).ready(function() {
      */
     function initWebsite() {
 
+        if ($(window).width() > 600) { scrollPage(); }
         clickLink();
         initCarousel();
     }

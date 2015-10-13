@@ -1,6 +1,20 @@
 $(document).ready(function() {
 
     /*
+     * Basic config, default classes
+     */
+    var config = { header : '.header', carousel : '.carousel', collapse : 'collapse' }
+
+    /*
+     * Extract link according to this link is inside of carousel or not
+     * params {jobject} $link : current encore
+     */
+    function getLinkId($link) {
+
+        return $link.closest(config.carousel).length > 0 ? '#get_started' : $link.attr('href');
+    }
+
+    /*
      * Calculate target position from link id
      * params {string} id : link id
      */
@@ -23,7 +37,7 @@ $(document).ready(function() {
      */
     function collapseHeader() {
 
-        return $('.header').removeClass('collapse');
+        return $(config.header).removeClass(config.collapse);
     }
 
     /*
@@ -31,11 +45,11 @@ $(document).ready(function() {
      */
     function restoreHeader() {
 
-        return $('.header').addClass('collapse');
+        return $(config.header).addClass(config.collapse);
     }
 
     /*
-     * Actions from click event on link navigator dom element
+     * Actions from click event of toSection links
      */
     function clickLink() {
 
@@ -44,7 +58,7 @@ $(document).ready(function() {
         $link.on('click', function (e) {
             e.preventDefault();
 
-            var linkId = $(this).attr('href'),
+            var linkId = getLinkId($(this)),
                 target = getTarget(linkId);
 
             smoothScroll(target);
@@ -57,7 +71,7 @@ $(document).ready(function() {
     function scrollPage() {
 
         var collapse = false,
-            headerHeight = $('.header').height();
+            headerHeight = $(config.header).height();
 
         $(window).on('scroll', function () {
 
@@ -71,7 +85,7 @@ $(document).ready(function() {
      */
     function initCarousel() {
 
-        return $('.carousel').slick({
+        return $(config.carousel).slick({
             infinite: true,
             autoplay: true,
             autoplaySpeed: 4000,

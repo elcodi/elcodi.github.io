@@ -29,9 +29,7 @@ $color_background: #191919
 
     .twitter
         font-size: 48px
-
-        &:hover > i
-            color: white
+        color: $color_text
 
 
 // -------------------------------------------------------------------
@@ -50,3 +48,11 @@ $color_background: #191919
         .brand
             max-width: 175px
 
+
+        .twitter
+
+            &:hover
+                color: white
+
+            &:active, &:focus, &:visited
+                color: inherit
